@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/parishes.schema.json",
+  "title": "Parishes Data Schema",
+  "description": "Schema for diocesan parish and church schedules grouped by city slug.",
+  "type": "object",
+  "minProperties": 1,
+  "patternProperties": {
+    "^[a-z0-9_-]+$": {
+      "$ref": "#/$defs/cityEntry"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "nullableNumber": {
+      "type": ["number", "null"]
+    },
+    "cityEntry": {
+      "type": "object",
+      "properties": {
+        "diocese": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "parishes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/parish"
+          }
+        }
+      },
+      "required": ["diocese", "website", "city", "state", "parishes"],
+      "additionalProperties": false
+    },
+    "parish": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        },
+        "instagram": {
+          "type": "string"
+        },
+        "priests": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/priest"
+          }
+        },
+        "churches": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/church"
+          }
+        }
+      },
+      "required": ["name", "address", "phone", "email", "website", "instagram", "churches"],
+      "additionalProperties": false
+    },
+    "priest": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        }
+      },
+      "required": ["name", "role"],
+      "additionalProperties": false
+    },
+    "church": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "location": {
+          "$ref": "#/$defs/location"
+        },
+        "services": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/service"
+          }
+        }
+      },
+      "required": ["name", "address", "location", "services"],
+      "additionalProperties": false
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "$ref": "#/$defs/nullableNumber"
+        },
+        "longitude": {
+          "$ref": "#/$defs/nullableNumber"
+        }
+      },
+      "required": ["latitude", "longitude"],
+      "additionalProperties": false
+    },
+    "service": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "type_name": {
+          "type": "string"
+        },
+        "day": {
+          "type": "string"
+        },
+        "time": {
+          "type": "string",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": ["type", "type_name", "day", "time"],
+      "additionalProperties": false
+    }
+  }
+}
