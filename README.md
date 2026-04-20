@@ -24,6 +24,8 @@ Provisions AWS infrastructure with Terraform:
 
 - S3 bucket for site content
 - CloudFront distribution in front of S3
+- Optional custom domain on CloudFront using ACM certificate
+- Optional Route53 A/AAAA alias records for the custom domain
 - CloudFront Origin Access Control (OAC)
 - S3 bucket policy allowing reads only from this CloudFront distribution
 
@@ -68,6 +70,14 @@ Add these secrets in GitHub: `Settings -> Secrets and variables -> Actions`.
 - `SITE_BUCKET_NAME`: Globally unique S3 bucket name for site content
 - `CLOUDFRONT_PRICE_CLASS`: CloudFront price class (example: `PriceClass_100`)
 
+### Custom Domain for CloudFront
+
+- `CLOUDFRONT_CUSTOM_DOMAIN`: Custom host name (example: `app.example.com`)
+- `CLOUDFRONT_ACM_CERT_ARN`: Optional ACM certificate ARN for the custom domain (must be in `us-east-1`)
+- `CLOUDFRONT_CREATE_ROUTE53_RECORD`: `true` or `false` to enable Route53 record creation
+- `ROUTE53_ZONE_ID`: Hosted zone ID (required when `CLOUDFRONT_CREATE_ROUTE53_RECORD=true`, and also used if Terraform must create/validate ACM certificate)
+- `CLOUDFRONT_ROUTE53_RECORD_NAME`: Optional Route53 record name. If empty, uses `CLOUDFRONT_CUSTOM_DOMAIN`
+
 ### Content Deployment
 
 - `CLOUDFRONT_DISTRIBUTION_ID`: CloudFront distribution ID to invalidate
@@ -76,4 +86,5 @@ Add these secrets in GitHub: `Settings -> Secrets and variables -> Actions`.
 
 - The infrastructure workflow is designed for OIDC-based AWS access (no static AWS access keys required).
 - `TF_STATE_BUCKET` must exist before running the infrastructure workflow.
+- If using custom domain, you can either provide `CLOUDFRONT_ACM_CERT_ARN` (in `us-east-1`) or let Terraform create and validate it automatically via `ROUTE53_ZONE_ID`.
 - After the first successful infrastructure deployment, use Terraform outputs to populate `CLOUDFRONT_DISTRIBUTION_ID`.

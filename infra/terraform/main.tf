@@ -2,6 +2,11 @@ provider "aws" {
   region = var.aws_region
 }
 
+provider "aws" {
+  alias  = "us_east_1"
+  region = "us-east-1"
+}
+
 locals {
   common_tags = merge(
     {
@@ -10,6 +15,44 @@ locals {
     },
     var.tags
   )
+
+  has_custom_domain            = trimspace(var.custom_domain_name) != ""
+  should_create_acm_certificate = local.has_custom_domain && trimspace(var.acm_certificate_arn) == "" && trimspace(var.route53_zone_id) != ""
+  effective_acm_certificate_arn = local.should_create_acm_certificate ? try(aws_acm_certificate_validation.site[0].certificate_arn, "") : trimspace(var.acm_certificate_arn)
+  use_custom_domain             = local.has_custom_domain && local.effective_acm_certificate_arn != ""
+}
+
+resource "aws_acm_certificate" "site" {
+  provider = aws.us_east_1
+  count    = local.should_create_acm_certificate ? 1 : 0
+
+  domain_name       = var.custom_domain_name
+  validation_method = "DNS"
+
+  lifecycle {
+    create_before_destroy = true
+  }
+
+  tags = local.common_tags
+}
+
+resource "aws_route53_record" "site_cert_validation" {
+  count = local.should_create_acm_certificate ? length(aws_acm_certificate.site[0].domain_validation_options) : 0
+
+  allow_overwrite = true
+  zone_id         = var.route53_zone_id
+  name            = tolist(aws_acm_certificate.site[0].domain_validation_options)[count.index].resource_record_name
+  type            = tolist(aws_acm_certificate.site[0].domain_validation_options)[count.index].resource_record_type
+  ttl             = 60
+  records         = [tolist(aws_acm_certificate.site[0].domain_validation_options)[count.index].resource_record_value]
+}
+
+resource "aws_acm_certificate_validation" "site" {
+  provider = aws.us_east_1
+  count    = local.should_create_acm_certificate ? 1 : 0
+
+  certificate_arn         = aws_acm_certificate.site[0].arn
+  validation_record_fqdns = [for record in aws_route53_record.site_cert_validation : record.fqdn]
 }
 
 resource "aws_s3_bucket" "site" {
@@ -49,6 +92,7 @@ resource "aws_cloudfront_distribution" "site" {
   default_root_object = "index.html"
   price_class         = var.cloudfront_price_class
   comment             = "${var.project_name} static site"
+  aliases             = local.use_custom_domain ? [var.custom_domain_name] : []
 
   origin {
     domain_name              = aws_s3_bucket.site.bucket_regional_domain_name
@@ -93,10 +137,48 @@ resource "aws_cloudfront_distribution" "site" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    cloudfront_default_certificate = local.use_custom_domain ? false : true
+    acm_certificate_arn            = local.use_custom_domain ? local.effective_acm_certificate_arn : null
+    ssl_support_method             = local.use_custom_domain ? "sni-only" : null
+    minimum_protocol_version       = local.use_custom_domain ? "TLSv1.2_2021" : null
+  }
+
+  lifecycle {
+    precondition {
+      condition = !local.has_custom_domain || local.effective_acm_certificate_arn != ""
+      error_message = "For custom domain, provide acm_certificate_arn or set route53_zone_id so Terraform can create and validate an ACM certificate automatically."
+    }
   }
 
   tags = local.common_tags
+}
+
+resource "aws_route53_record" "site_a" {
+  count = var.create_route53_record && local.use_custom_domain && trimspace(var.route53_zone_id) != "" ? 1 : 0
+
+  zone_id = var.route53_zone_id
+  name    = trimspace(var.route53_record_name) != "" ? var.route53_record_name : var.custom_domain_name
+  type    = "A"
+
+  alias {
+    name                   = aws_cloudfront_distribution.site.domain_name
+    zone_id                = aws_cloudfront_distribution.site.hosted_zone_id
+    evaluate_target_health = false
+  }
+}
+
+resource "aws_route53_record" "site_aaaa" {
+  count = var.create_route53_record && local.use_custom_domain && trimspace(var.route53_zone_id) != "" ? 1 : 0
+
+  zone_id = var.route53_zone_id
+  name    = trimspace(var.route53_record_name) != "" ? var.route53_record_name : var.custom_domain_name
+  type    = "AAAA"
+
+  alias {
+    name                   = aws_cloudfront_distribution.site.domain_name
+    zone_id                = aws_cloudfront_distribution.site.hosted_zone_id
+    evaluate_target_health = false
+  }
 }
 
 resource "aws_s3_bucket_policy" "site" {

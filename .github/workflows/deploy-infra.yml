@@ -30,6 +30,11 @@ jobs:
       TF_VAR_project_name: ${{ secrets.PROJECT_NAME }}
       TF_VAR_site_bucket_name: ${{ secrets.SITE_BUCKET_NAME }}
       TF_VAR_cloudfront_price_class: ${{ secrets.CLOUDFRONT_PRICE_CLASS }}
+      TF_VAR_custom_domain_name: ${{ secrets.CLOUDFRONT_CUSTOM_DOMAIN }}
+      TF_VAR_acm_certificate_arn: ${{ secrets.CLOUDFRONT_ACM_CERT_ARN }}
+      TF_VAR_create_route53_record: ${{ secrets.CLOUDFRONT_CREATE_ROUTE53_RECORD }}
+      TF_VAR_route53_zone_id: ${{ secrets.ROUTE53_ZONE_ID }}
+      TF_VAR_route53_record_name: ${{ secrets.CLOUDFRONT_ROUTE53_RECORD_NAME }}
 
     steps:
       - name: Checkout

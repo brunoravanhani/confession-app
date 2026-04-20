@@ -12,3 +12,13 @@ output "cloudfront_distribution_domain_name" {
   description = "CloudFront distribution domain name."
   value       = aws_cloudfront_distribution.site.domain_name
 }
+
+output "site_url" {
+  description = "Primary URL for the site. Uses custom domain when configured."
+  value       = trimspace(var.custom_domain_name) != "" ? "https://${var.custom_domain_name}" : "https://${aws_cloudfront_distribution.site.domain_name}"
+}
+
+output "custom_domain_name" {
+  description = "Configured custom domain name for CloudFront (empty when not configured)."
+  value       = var.custom_domain_name
+}
