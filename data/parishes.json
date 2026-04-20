@@ -1,0 +1,2011 @@
+{
+    "cuiaba": {
+        "diocese": "Arquidiocese de Cuiabá",
+        "website": "https://arquidiocesecuiaba.org.br/",
+        "city": "Cuiabá",
+        "state": "Mato Grosso",
+        "parishes": [
+            {
+                "name": "Paroquia Universitária São José Operário",
+                "address": "Rua Comendador Henrique, 1040, Dom Aquino, Cuiabá, MT, Brazil",
+                "phone": "65 3623-0756",
+                "email": "paroquiasaojoseoperariocuiaba@gmail.com",
+                "website": "https://paroquiansp.com.br/",
+                "instagram": "https://www.instagram.com/paroquiansp/",
+                "priests": [
+                    {
+                        "name": "Padre Natalino Ueda",
+                        "role": "Vigário"
+                    },
+                    {
+                        "name": "Padre Renan da Silva Cunha",
+                        "role": "Vigário"
+                    },
+                    {
+                        "name": "Padre Kleberson Paes da Silva",
+                        "role": "Pároco"
+                    }
+                ],
+                "churches": [
+                    {
+                        "name": "Igreja Matriz São José Operário",
+                        "address": "Rua Comendador Henrique, 1040, Dom Aquino, Cuiabá, MT, Brazil",
+                        "location": {
+                            "latitude": -15.5989,
+                            "longitude": -56.0949
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "10:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "06:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "06:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "06:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "06:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sábado", "time": "06:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Domingo", "time": "10:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Domingo", "time": "18:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São Paulo Apóstolo",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São Mateus",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "08:30" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:30" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São João Batista",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "08:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "18:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Santa Teresinha",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Catedral Basílica Senhor Bom Jesus de Cuiabá",
+                "address": "Praça da República Nº01, Centro Norte, CEP: 78005970 - Cuiabá-MT CAIXA POSTAL 216",
+                "phone": "65 3321 2729 / 65 99983 2729",
+                "email": "catedralbasilica@cuiabaarquidiocese.net",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Catedral Basílica Senhor Bom Jesus de Cuiabá",
+                        "address": "Praça da República Nº01, Centro Norte, CEP: 78005970 - Cuiabá-MT CAIXA POSTAL 216",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "12:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "12:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "12:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "12:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "12:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "17:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "16:00", "notes": "Até 18:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "16:00", "notes": "Até 18:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "16:00", "notes": "Até 18:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "14:00", "notes": "Até 18:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Coração Imaculado de Maria",
+                "address": "217, Rua O, 161 - Morada da Serra, Cuiabá - MT",
+                "phone": "65 99352-2378",
+                "email": "paroquiacim@hotmail.com",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Coração Imaculado de Maria",
+                        "address": "217, Rua O, 161 - Morada da Serra, Cuiabá - MT",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "14:30", "notes": "Até 17:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "14:30", "notes": "Até 17:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "14:30", "notes": "Até 17:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "14:30", "notes": "Até 17:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Cristo Rei",
+                "address": "R. Dep. Emanuel Pinheiro da Silva Primo, 200 - Cristo Rei, Várzea Grande - MT, 78118-015",
+                "phone": "65 3685 2097 / 65 9991-0784",
+                "email": "pcristorei@cuiabaarquidiocese.net",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Cristo Rei",
+                        "address": "R. Dep. Emanuel Pinheiro da Silva Primo, 200 - Cristo Rei, Várzea Grande - MT, 78118-015",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "10:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Segunda-feira", "time": "06:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "06:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "06:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "06:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "06:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sábado", "time": "06:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Domingo", "time": "07:00", "notes": "Durante a missa e se estende até a missa das 09:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Domingo", "time": "17:00", "notes": "Se estende até a missa das 19:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Divino Espírito Santo",
+                "address": "Rua Prof. Amaro F. Falcão, 622 - CPA II (Morada da Serra) , Cuiabá, MT, Brazil",
+                "phone": "65 9350-5246",
+                "email": "pdivinoespiritosanto@cuiabaarquidiocese.net",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Divino Espírito Santo",
+                        "address": "Rua Prof. Amaro F. Falcão, 622 - CPA II (Morada da Serra) , Cuiabá, MT, Brazil",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "17:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "17:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "09:00", "notes": "Até 10:45" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "09:00", "notes": "Até 10:45" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "15:00", "notes": "Até 16:45" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "15:00", "notes": "Até 16:45" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Nossa Senhora Aparecida – Cuiabá",
+                "address": "R. E-5, 121 - Jardim Nossa Sra. Aparecida, Cuiabá - MT, 78090-668",
+                "phone": "65 9258-6656",
+                "email": "pnsap@terra.com.br",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Nossa Senhora Aparecida – Cuiabá",
+                        "address": "R. E-5, 121 - Jardim Nossa Sra. Aparecida, Cuiabá - MT, 78090-668",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:30", "notes": "1ª Sexta-feira" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "08:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "08:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "08:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "08:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "08:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "14:00", "notes": "Até 17:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "14:00", "notes": "Até 17:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "14:00", "notes": "Até 17:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "14:00", "notes": "Até 17:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sábado", "time": "07:30", "notes": "Até 10:30" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Nossa Senhora Aparecida – Jangada",
+                "address": "Praça Eleozito José de Almeida s/n, Jangada, MT, Brazil, 78490000",
+                "phone": "65 99921-9332",
+                "email": "nsajangada@live.com",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Nossa Senhora Aparecida – Jangada",
+                        "address": "Praça Eleozito José de Almeida s/n, Jangada, MT, Brazil, 78490000",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00", "notes": "1ª sexta às 19h" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "18:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "08:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "08:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "08:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "08:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "19:00", "notes": "Durante a Missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Domingo", "time": "18:00", "notes": "Durante a Missa" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Nossa Senhora da Guia – Cuiabá",
+                "address": "Av. Fernando Correia da Costa, 3342 – Bairro Shangri-lá",
+                "phone": "(65) 3025-1400",
+                "email": "guiacoxipo@gmail.com",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Nossa Senhora da Guia – Cuiabá",
+                        "address": "Av. Fernando Correia da Costa, 3342 – Bairro Shangri-lá",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:30" }
+                        ]
+                    },
+                    {
+                        "name": "Nossa Senhora da Guia – Distrito da Guia",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Nossa Senhora da Guia – Várzea Grande",
+                "address": "Centro Norte, Várzea Grande - MT, 78110-400",
+                "phone": "65 3682 5575",
+                "email": "guiavgpascom@hotmail.com",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Nossa Senhora da Guia – Várzea Grande",
+                        "address": "Centro Norte, Várzea Grande - MT, 78110-400",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "12:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "08:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "17:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:30" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "14:00", "notes": "Até 17:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "09:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "09:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "14:00", "notes": "Até 17:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "14:00", "notes": "Até 17:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Nossa Senhora das Graças",
+                "address": "Av. Maracanã, 401 - Jardim Maringa, Várzea Grande - MT, 78120-500",
+                "phone": "65 999264-5956 / 65 3691-6220",
+                "email": "pnsgracas@cuiabaarquidiocese.net",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Nossa Senhora das Graças",
+                        "address": "Av. Maracanã, 401 - Jardim Maringa, Várzea Grande - MT, 78120-500",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "18:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Nossa Senhora de Brotas",
+                "address": "78485-000",
+                "phone": "(65) 3353-1280",
+                "email": "",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Nossa Senhora de Brotas",
+                        "address": "78485-000",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Nossa Senhora de Guadalupe",
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Nossa Senhora de Guadalupe",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "18:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "08:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "10:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "18:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Nossa Senhora do Pantanal",
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Nossa Senhora do Pantanal",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:30", "notes": "1ª do mês" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Nossa Senhora do Rosário – Rosário Oeste",
+                "address": "PRAÇA MANOEL LOUREIRO ,23 – ROSÁRIO OESTE – MT Cep: 78480-000",
+                "phone": "65 99625 3879",
+                "email": "pnsrosario-roeste@cuiabaarquidiocese.net",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Nossa Senhora do Rosário – Rosário Oeste",
+                        "address": "PRAÇA MANOEL LOUREIRO ,23 – ROSÁRIO OESTE – MT Cep: 78480-000",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São Francisco – Alto Serra Dourada",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Santa Isabel – Vila Santa Isabel",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora da Piedade – Taboão",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Benedito – São Benedito",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São João Batista – Aeroporto",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São José – Monjolo",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Santa Luzia – Torre",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Nossa Senhora Aparecida",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Angical",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Divino Espírito Santo – Barreiro Vermelho",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Pedro – Cachoeirinha",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Acopari",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Gonçalo – Castiçal",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Cedral grande",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Menino Jesus de Praga – Figueira",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Fonte Estevão",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora da Guia – Sítio Igrejinha Sales",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Limeira",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Fonte Estevão",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Sítio Manoel João",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Nicolau",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Benedito – Novo Horizonte",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São João – Pai Caetano",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade na Escola – Assentamento Raizama – BR 163",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Divino Pai Eterno – Distrito Sede",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Sant’ Ana – Passagem do Chiqueiro",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Pedro – Pescaria de Baixo",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Pindaival",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Pindura",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Ponte do Engenho",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Porto Alegre",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Benedito – Ribeirão Grande",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Pedro – São Pedro",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Várzea das Pedras",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Sebastião barreiro Branco – Fazenda Moacir Lima",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Barreiro Branco",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Benedito – Barreiro branco Fazenda Nandáia",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Barreiro Branco Fazenda Leonalva",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Sebastião barreiro branco fazenda catequista",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Benedito – Sitio da ponte",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Quati",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Capãozinho",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida – Raizama",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Nossa Senhora do Rosário e São Benedito",
+                "address": "Praça do Rosário, 01 - Baú, Cuiabá - MT, 78008-450",
+                "phone": "65 99981-8095 - 3322-5473",
+                "email": "",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Nossa Senhora do Rosário e São Benedito",
+                        "address": "Praça do Rosário, 01 - Baú, Cuiabá - MT, 78008-450",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "05:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00", "notes": "1ª do mês" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "17:00", "notes": "Com preceito dominical" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "14:00", "notes": "Até 17:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "14:00", "notes": "Até 17:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "14:00", "notes": "Até 17:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "14:00", "notes": "Até 17:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Nossa Senhora Mãe dos Homens",
+                "address": "Marechal Floriano Peixoto, 611 Quilombo, CEP 78045-310, Cuiabá-MT",
+                "phone": "(65) 3057-3708 / (65) 9 9997-2529",
+                "email": "pnsmaedoshomens@cuiabaarquidiocese.net",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Nossa Senhora Mãe dos Homens",
+                        "address": "Marechal Floriano Peixoto, 611 Quilombo, CEP 78045-310, Cuiabá-MT",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "18:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "17:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Nossa Senhora Medianeira de Todas as Graças",
+                "address": "Av. Taubaté, 434-482 - Novo Terceiro, Cuiabá - MT, 78028-310",
+                "phone": "65 - 3625 2585",
+                "email": "pnsmedianeira@cuiabaarquidiocese.net",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Nossa Senhora Medianeira de Todas as Graças",
+                        "address": "Av. Taubaté, 434-482 - Novo Terceiro, Cuiabá - MT, 78028-310",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "15:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:30" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São José",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São João Batista",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Benedito",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Sra. Do Perpétuo Socorro",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Santa Izabel",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Francisco",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Benedito do Pari",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Sra. de Fátima",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Sagrada Família",
+                "address": "Rua Italia Malpice de Barros, 85 - Carumbé, Cuiabá - MT, 78008-800",
+                "phone": "(65) 3653-3488",
+                "email": "psagradafamilia@cuiabaarquidiocese.net",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Sagrada Família",
+                        "address": "Rua Italia Malpice de Barros, 85 - Carumbé, Cuiabá - MT, 78008-800",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "06:00", "notes": "Após a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sábado", "time": "06:00", "notes": "Após a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "18:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "14:00", "notes": "Até 17:00 - com agendamento" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "14:00", "notes": "Até 17:00 - com agendamento" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Santa Edwiges",
+                "address": "R. Bolívia, s/n - Mapim, Várzea Grande - MT, 78143-322",
+                "phone": "65 3695-4561",
+                "email": "psedwiges@gmail.com",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Santa Edwiges",
+                        "address": "R. Bolívia, s/n - Mapim, Várzea Grande - MT, 78143-322",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:30" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "09:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "09:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "09:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "09:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "15:00", "notes": "Até 16:30" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "15:00", "notes": "Até 16:30" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "15:00", "notes": "Até 16:30" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "15:00", "notes": "Até 16:30" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "18:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:30" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Santo Antônio",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "08:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:30", "notes": "1° sexta-feira do mês" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Sagrado Coração de Jesus",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "08:00", "notes": "1° e 3° domingo do mês" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São Paulo Apóstolo",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:30" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São Benedito",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:30" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São José",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "16:00", "notes": "1° sábado" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Bom Jesus - Capão das Antas",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "08:00", "notes": "2° sábado" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São João Batista - Sadia III",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "10:00", "notes": "2° sábado" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Santo Expedito - Ninho das Águias",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "17:00", "notes": "3° sábado" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Santa Luzia",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:30", "notes": "3° sábado" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Jesus, Maria e José",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "16:00", "notes": "4° sábado" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Santo Antônio – Santo Antônio de Leverger",
+                "address": "Rua Treze de Junho 55, Santo Antônio do Leverger, MT, Brazil",
+                "phone": "65 99939-5898",
+                "email": "secretariasantoantonio@hotmail.com",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Santo Antônio – Santo Antônio de Leverger",
+                        "address": "Rua Treze de Junho 55, Santo Antônio do Leverger, MT, Brazil",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "05:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "05:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "05:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "05:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia Santo Antônio de Pádua – Várzea Grande",
+                "address": "R. Henrique Pires de Camargo, 20 - Jardim Ouro Verde, Várzea Grande - MT, 78148-030",
+                "phone": "(65) 3686-8922",
+                "email": "psantonio-vg@cuiabaarquidiocese.net",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Santo Antônio de Pádua – Várzea Grande",
+                        "address": "R. Henrique Pires de Camargo, 20 - Jardim Ouro Verde, Várzea Grande - MT, 78148-030",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "18:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Santuário Eucarístico Nossa Senhora do Bom Despacho",
+                "address": "Praça do Seminário, s/n - Dom Aquino, Cuiabá - MT, 78015-325",
+                "phone": "65 99946-1183",
+                "email": "santuarioeucaristico@cuiabaarquidiocese.net",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Santuário Eucarístico Nossa Senhora do Bom Despacho",
+                        "address": "Praça do Seminário, s/n - Dom Aquino, Cuiabá - MT, 78015-325",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "18:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "18:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "18:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "18:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "18:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "17:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Segunda-feira", "time": "07:00", "notes": "Após a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "07:00", "notes": "Após a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "07:00", "notes": "Após a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "07:00", "notes": "Após a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "07:00", "notes": "Após a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Segunda-feira", "time": "18:00", "notes": "Após a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "18:00", "notes": "Após a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "18:00", "notes": "Após a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "18:00", "notes": "Após a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "18:00", "notes": "Após a missa" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Santuário Eucarístico São João Paulo II",
+                "address": "Av. Oátomo Canavarros, 1079 - Bela Vista, Cuiabá - MT, 78050-568",
+                "phone": "65 99307 3734",
+                "email": "santuarioeucaristicojpcuiaba@hotmail.com",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Santuário Eucarístico São João Paulo II",
+                        "address": "Av. Oátomo Canavarros, 1079 - Bela Vista, Cuiabá - MT, 78050-568",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "10:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "14:30", "notes": "Até 17:30" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "14:30", "notes": "Até 17:30" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Santuário Nossa Senhora da Medalha Milagrosa",
+                "address": "Av. Brasil, 160, Pascoal Ramos",
+                "phone": "65 3667 4400",
+                "email": "santuariodamedalhamilagrosacba@gmail.com",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "Santuário Nossa Senhora da Medalha Milagrosa",
+                        "address": "Av. Brasil, 160, Pascoal Ramos",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:30" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia São Gonçalo",
+                "address": "Av. XV de Novembro, 664 - Centro Sul, Cuiabá - MT, 78020-300",
+                "phone": "(65) 2127-0617 - 9 89403 4757",
+                "email": "",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "São Gonçalo",
+                        "address": "Av. XV de Novembro, 664 - Centro Sul, Cuiabá - MT, 78020-300",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "17:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "08:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "17:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "09:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "15:00", "notes": "Até 17:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia São João Bosco",
+                "address": "Av. Jornalista Alves de Oliveira, 407, Cuiabá, Brazil",
+                "phone": "65 - 3637 3448 - 99981 1835",
+                "email": "",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "São João Bosco",
+                        "address": "Av. Jornalista Alves de Oliveira, 407, Cuiabá, Brazil",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "15:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "15:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "15:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "15:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "15:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "18:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "10:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "17:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "15:00", "notes": "Durante a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "15:00", "notes": "Durante a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "15:00", "notes": "Durante a missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "15:00", "notes": "Durante a missa" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia São Mateus Apóstolo e Evangelista",
+                "address": "Av. das Palmeiras, S/N - Jardim Universitario, Cuiabá - MT, 78075-850",
+                "phone": "65 3663-2013",
+                "email": "psmateus@cuiabaarquidiocese.net",
+                "website": "",
+                "instagram": "",
+                "priests" : [
+                    { "name": "Padre Eduardo da Silva Queiroz", "role": "Pároco" },
+                    { "name": "Padre Edvânio Acendino Martins", "role": "Vigário" }
+                ],
+                "churches": [
+                    {
+                        "name": "São Mateus Apóstolo e Evangelista",
+                        "address": "Av. das Palmeiras, S/N - Jardim Universitario, Cuiabá - MT, 78075-850",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "18:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "10:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "17:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "18:30", "notes": "Até 20:30 - por ordem de chegada" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Bom Pastor",
+                        "address": "",
+                        "location": {
+                            "latitude": -15.5989232,
+                            "longitude": -56.0659523
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Santa Cruz",
+                        "address": "Rua Castro Alves 26 Santa Cruz I, Cuiabá, MT",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "18:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São Miguel e Santa Marta",
+                        "address": "Rua Alessandria, Jd Itália - Cuiabá/MT",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "10:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "18:00" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia São Sebastião – 3 Barras Cuiabá",
+                "address": "Avenia A, Quadra 20, 332, Três Barras, Cuiabá, Brazil 78058513",
+                "phone": "65 - 99277 1705",
+                "email": "saosebastiaomt@outlook.com.br",
+                "website": "",
+                "instagram": "https://www.instagram.com/sebastiao.tresbarras",
+                "priests" : [
+                    { "name": "Padre Elilzo Marques de Oliveira", "role": "Pároco" },
+                    { "name": "Padre Marcos Daniel Pereira", "role": "Vigário" }
+                ],
+                "churches": [
+                    {
+                        "name": "São Sebastião – 3 Barras Cuiabá",
+                        "address": "Avenia A, Quadra 20, 332, Três Barras, Cuiabá, Brazil 78058513",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "05:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "05:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "05:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "05:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "05:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "05:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "10:30" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "09:00", "notes": "Até 11:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "14:00", "notes": "Até 17:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Santíssima Trindade – Altos da Glória",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Bom Jesus de Nazaré – Dr. Fábio Leite II",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora da Glória – Altos da Glória",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Sagrado Coração de Jesus – Dr. Fábio Leite II",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Sant’Ana e São Joaquim – Residencial Nova Canaã",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade Santa Rita de Cássia – Rural – Antiga Estrada Jurumirim",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Jerônimo – Rural – Morro de São Jerônimo",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    },
+                    {
+                        "name": "Comunidade São Benedito e Nossa Senhora Aparecida – Rio dos Médicos",
+                        "address": "",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": []
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia São Sebastião – Nobres",
+                "address": "Rua Bahia, 361, São José, Nobres 78470000",
+                "phone": "65 99627-9381",
+                "email": "",
+                "website": "",
+                "instagram": "",
+                "churches": [
+                    {
+                        "name": "São Sebastião – Nobres",
+                        "address": "Rua Bahia, 361, São José, Nobres 78470000",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "15:00", "notes": "Até 18:30" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "15:00", "notes": "Até 18:30" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "15:00", "notes": "Até 18:30" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "15:00", "notes": "Até 18:30" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paróquia São Sebastião – Várzea Grande",
+                "address": "Av Júlio Campos, nº 3767, Marajoara, Várzea Grande, MT, Brazil",
+                "phone": "65 3029-2559",
+                "email": "paseba@cuiabaarquidiosece.net",
+                "website": "",
+                "instagram": "",
+                "priests" : [
+                    { "name": "Padre Helder Zolet Adversi", "role": "Pároco" },
+                    { "name": "Padre Pedro Ferreira Faustino", "role": "Vigário" },
+                    { "name": "Padre Padre Flávio Rafael Matias de Almeida", "role": "Vigário" },
+                    { "name": "Padre Renan Ribeiro Bouret Melo", "role": "Vigário" }
+                ],
+                "churches": [
+                    {
+                        "name": "São Sebastião – Várzea Grande",
+                        "address": "Av Júlio Campos, nº 3767, Marajoara, Várzea Grande, MT, Brazil",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "06:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
+                            { "type": 2, "type_name": "Confissão", "day": "Segunda-feira", "time": "06:00", "notes": "Durante a Santa Missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "06:00", "notes": "Durante a Santa Missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "06:00", "notes": "Durante a Santa Missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "06:00", "notes": "Durante a Santa Missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "06:00", "notes": "Durante a Santa Missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Sábado", "time": "06:00", "notes": "Durante a Santa Missa" },
+                            { "type": 2, "type_name": "Confissão", "day": "Domingo", "time": "17:00", "notes": "Até 18:30" }
+                        ]
+                    },
+                    {
+                        "name": "Capela São Benedito",
+                        "address": "Residencial São Benedito, Várzea Grande, MT",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:30" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Nossa Senhora das Graças",
+                        "address": "Água Vermelha",
+                        "location": {
+                            "latitude": -15.650887,
+                            "longitude": -56.147854
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Noviciado São José",
+                        "address": "Bairro São Marcos",
+                        "location": {
+                            "latitude": -15.643551,
+                            "longitude": -56.169042
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Menino Jesus de Praga",
+                        "address": "Jardim El Dourado, Várzea Grande, MT",
+                        "location": {
+                            "latitude": -15.657445,
+                            "longitude": -56.187751
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela São Vicente de Paulo",
+                        "address": "Jardim Glória",
+                        "location": {
+                            "latitude": -15.644278,
+                            "longitude": -56.149107
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Santa Rita de Cássia",
+                        "address": "Estrela Dalva",
+                        "location": {
+                            "latitude": -15.645723,
+                            "longitude": -56.163661
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela São Francisco de Assis",
+                        "address": "Bairro São Marcos",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Sagrada Familia",
+                        "address": "Marajoara",
+                        "location": {
+                            "latitude": -15.654436,
+                            "longitude": -56.155849
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "18:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela São Mateus",
+                        "address": "São Mateus",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "18:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Nossa Senhora Rosa Mistica",
+                        "address": "Jardim Gloria",
+                        "location": {
+                            "latitude": -15.641198,
+                            "longitude": -56.148725
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "18:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Nossa Senhora Rainha da Paz",
+                        "address": "Serra Dourada",
+                        "location": {
+                            "latitude": -15.623352,
+                            "longitude": -56.145833
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Nossa Senhora Aparecida",
+                        "address": "Cidade de Deus",
+                        "location": {
+                            "latitude": -15.653042,
+                            "longitude": -56.184398
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:30" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Nossa Senhora da Glória",
+                        "address": "Jardim Glória",
+                        "location": {
+                            "latitude": -15.636774,
+                            "longitude": -56.15629
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela São Pedro",
+                        "address": "Jardim Itororó",
+                        "location": {
+                            "latitude": -15.662186,
+                            "longitude": -56.173633
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Santa Isabel da Hungria",
+                        "address": "Santa Isabel",
+                        "location": {
+                            "latitude": -15.651784,
+                            "longitude": -56.173447
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Sagrado Coração de Jesus",
+                        "address": "Jardim Alá, Varze Grande, MT",
+                        "location": {
+                            "latitude": -15.6310181,
+                            "longitude": -56.1557443
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Nossa Senhora Aparecida",
+                        "address": "São Mateus, Várzea Grande, MT",
+                        "location": {
+                            "latitude": -15.667436,
+                            "longitude": -56.184017
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela São João Batista",
+                        "address": "Asa Bela, Várzea Grande, MT",
+                        "location": {
+                            "latitude": -15.657407,
+                            "longitude": -56.17601
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Santa Teresinha do Menino Jesus",
+                        "address": "Vila Arthur",
+                        "location": {
+                            "latitude": -15.636305,
+                            "longitude": -56.148199
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Capela Nossa Senhora do Perpétuo Socorro",
+                        "address": "Marajoara II, Várzea Grande, MT",
+                        "location": {
+                            "latitude": -15.65626,
+                            "longitude": -56.162718
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
