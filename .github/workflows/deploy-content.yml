@@ -1,0 +1,58 @@
+name: Deploy Content
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "app/**"
+      - "next.config.ts"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig.json"
+      - "postcss.config.mjs"
+      - "public/**"
+      - "data/**"
+      - ".github/workflows/deploy-content.yml"
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy-content:
+    name: Build Next.js and Deploy to S3
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js static app
+        run: npm run build
+
+      - name: Configure AWS Credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+
+      - name: Sync to S3
+        run: |
+          aws s3 sync out s3://${{ secrets.SITE_BUCKET_NAME }} --delete
+
+      - name: Invalidate CloudFront
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
