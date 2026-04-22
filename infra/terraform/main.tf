@@ -62,7 +62,7 @@ resource "aws_acm_certificate_validation" "site" {
 }
 
 resource "aws_s3_bucket" "site" {
-  bucket = var.site_bucket_name
+  bucket        = var.site_bucket_name
   force_destroy = var.site_bucket_force_destroy
 
   tags = local.common_tags
