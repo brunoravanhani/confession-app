@@ -37,14 +37,20 @@ resource "aws_acm_certificate" "site" {
 }
 
 resource "aws_route53_record" "site_cert_validation" {
-  count = local.should_create_acm_certificate ? length(aws_acm_certificate.site[0].domain_validation_options) : 0
+  for_each = local.should_create_acm_certificate ? {
+    for dvo in aws_acm_certificate.site[0].domain_validation_options : dvo.domain_name => {
+      name   = dvo.resource_record_name
+      record = dvo.resource_record_value
+      type   = dvo.resource_record_type
+    }
+  } : {}
 
   allow_overwrite = true
   zone_id         = var.route53_zone_id
-  name            = tolist(aws_acm_certificate.site[0].domain_validation_options)[count.index].resource_record_name
-  type            = tolist(aws_acm_certificate.site[0].domain_validation_options)[count.index].resource_record_type
+  name            = each.value.name
+  type            = each.value.type
   ttl             = 60
-  records         = [tolist(aws_acm_certificate.site[0].domain_validation_options)[count.index].resource_record_value]
+  records         = [each.value.record]
 }
 
 resource "aws_acm_certificate_validation" "site" {
@@ -57,6 +63,7 @@ resource "aws_acm_certificate_validation" "site" {
 
 resource "aws_s3_bucket" "site" {
   bucket = var.site_bucket_name
+  force_destroy = var.site_bucket_force_destroy
 
   tags = local.common_tags
 }
@@ -96,12 +103,12 @@ resource "aws_cloudfront_distribution" "site" {
 
   origin {
     domain_name              = aws_s3_bucket.site.bucket_regional_domain_name
-    origin_id                = "s3-${aws_s3_bucket.site.id}"
+    origin_id                = "site-origin"
     origin_access_control_id = aws_cloudfront_origin_access_control.site.id
   }
 
   default_cache_behavior {
-    target_origin_id       = "s3-${aws_s3_bucket.site.id}"
+    target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
     allowed_methods        = ["GET", "HEAD", "OPTIONS"]
     cached_methods         = ["GET", "HEAD"]

@@ -13,6 +13,12 @@ variable "site_bucket_name" {
   type        = string
 }
 
+variable "site_bucket_force_destroy" {
+  description = "Whether to allow force-destroying the site bucket when it contains objects."
+  type        = bool
+  default     = false
+}
+
 variable "cloudfront_price_class" {
   description = "CloudFront price class."
   type        = string
