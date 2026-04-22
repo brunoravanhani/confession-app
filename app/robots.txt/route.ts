@@ -1,4 +1,4 @@
-import type { MetadataRoute } from "next";
+export const dynamic = "force-static";
 
 function getSiteUrl(): string {
   const configuredUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
@@ -14,15 +14,13 @@ function getSiteUrl(): string {
   return `https://${configuredUrl}`;
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export async function GET(): Promise<Response> {
   const siteUrl = getSiteUrl();
+  const robotsTxt = `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\nHost: ${siteUrl}\n`;
 
-  return [
-    {
-      url: siteUrl,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1,
+  return new Response(robotsTxt, {
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
     },
-  ];
+  });
 }

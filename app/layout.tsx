@@ -6,7 +6,7 @@ function getSiteUrl(): string {
   const configuredUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 
   if (!configuredUrl) {
-    return "";
+    return "https://confession-app.vercel.app";
   }
 
   if (configuredUrl.startsWith("http://") || configuredUrl.startsWith("https://")) {
