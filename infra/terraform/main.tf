@@ -161,7 +161,7 @@ resource "aws_cloudfront_distribution" "site" {
 }
 
 resource "aws_route53_record" "site_a" {
-  count = var.create_route53_record && local.use_custom_domain && trimspace(var.route53_zone_id) != "" ? 1 : 0
+  count = var.create_route53_record ? 1 : 0
 
   zone_id = var.route53_zone_id
   name    = trimspace(var.route53_record_name) != "" ? var.route53_record_name : var.custom_domain_name
@@ -175,7 +175,7 @@ resource "aws_route53_record" "site_a" {
 }
 
 resource "aws_route53_record" "site_aaaa" {
-  count = var.create_route53_record && local.use_custom_domain && trimspace(var.route53_zone_id) != "" ? 1 : 0
+  count = var.create_route53_record ? 1 : 0
 
   zone_id = var.route53_zone_id
   name    = trimspace(var.route53_record_name) != "" ? var.route53_record_name : var.custom_domain_name
