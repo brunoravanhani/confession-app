@@ -16,7 +16,7 @@ locals {
     var.tags
   )
 
-  has_custom_domain            = trimspace(var.custom_domain_name) != ""
+  has_custom_domain             = trimspace(var.custom_domain_name) != ""
   should_create_acm_certificate = local.has_custom_domain && trimspace(var.acm_certificate_arn) == "" && trimspace(var.route53_zone_id) != ""
   effective_acm_certificate_arn = local.should_create_acm_certificate ? try(aws_acm_certificate_validation.site[0].certificate_arn, "") : trimspace(var.acm_certificate_arn)
   use_custom_domain             = local.has_custom_domain && local.effective_acm_certificate_arn != ""
@@ -145,7 +145,7 @@ resource "aws_cloudfront_distribution" "site" {
 
   lifecycle {
     precondition {
-      condition = !local.has_custom_domain || local.effective_acm_certificate_arn != ""
+      condition     = !local.has_custom_domain || local.effective_acm_certificate_arn != ""
       error_message = "For custom domain, provide acm_certificate_arn or set route53_zone_id so Terraform can create and validate an ACM certificate automatically."
     }
   }
@@ -188,8 +188,8 @@ resource "aws_s3_bucket_policy" "site" {
     Version = "2012-10-17"
     Statement = [
       {
-        Sid       = "AllowCloudFrontRead"
-        Effect    = "Allow"
+        Sid    = "AllowCloudFrontRead"
+        Effect = "Allow"
         Principal = {
           Service = "cloudfront.amazonaws.com"
         }
