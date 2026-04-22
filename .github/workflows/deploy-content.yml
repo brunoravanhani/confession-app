@@ -24,6 +24,8 @@ jobs:
   deploy-content:
     name: Build Next.js and Deploy to S3
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
 
     steps:
       - name: Checkout

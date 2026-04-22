@@ -81,6 +81,7 @@ Add these secrets in GitHub: `Settings -> Secrets and variables -> Actions`.
 ### Content Deployment
 
 - `CLOUDFRONT_DISTRIBUTION_ID`: CloudFront distribution ID to invalidate
+- `NEXT_PUBLIC_SITE_URL`: Public site URL used at build time for canonical metadata, sitemap, and robots (example: `https://app.example.com`)
 
 ## Notes
 
