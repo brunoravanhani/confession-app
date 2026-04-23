@@ -46,6 +46,14 @@ type ServiceItem = {
   service: Service;
 };
 
+type GroupedServiceItem = {
+  parishName: string;
+  churchName: string;
+  churchAddress: string;
+  churchLocation?: ChurchLocation;
+  services: Service[];
+};
+
 const MASS_TYPE = 1;
 const CONFESSION_TYPE = 2;
 const CITY_SLUG = "cuiaba";
@@ -106,6 +114,30 @@ function isServiceInFuture(serviceTime: string, currentHours: number, currentMin
 function getTimeInMinutes(serviceTime: string): number {
   const [h, m] = serviceTime.split(":").map(Number);
   return h * 60 + m;
+}
+
+function groupServicesByChurch(items: ServiceItem[]): GroupedServiceItem[] {
+  const groups = new Map<string, GroupedServiceItem>();
+
+  items.forEach((item) => {
+    const key = `${item.parishName}|${item.churchName}|${item.churchAddress}`;
+    const existing = groups.get(key);
+
+    if (existing) {
+      existing.services.push(item.service);
+      return;
+    }
+
+    groups.set(key, {
+      parishName: item.parishName,
+      churchName: item.churchName,
+      churchAddress: item.churchAddress,
+      churchLocation: item.churchLocation,
+      services: [item.service],
+    });
+  });
+
+  return Array.from(groups.values());
 }
 
 function getServicesByType(cityEntry: CityEntry, serviceType: number): ServiceItem[] {
@@ -226,6 +258,8 @@ export default function HomeContent() {
     : filteredConfessions;
 
   const displayedMasses = showTodayTomorrow ? [...filteredMasses].sort(sortByDayAndTimeAsc) : filteredMasses;
+  const groupedConfessions = groupServicesByChurch(displayedConfessions);
+  const groupedMasses = groupServicesByChurch(displayedMasses);
 
   return (
     <div className="min-h-full flex-1 bg-white px-4 py-10">
@@ -277,10 +311,10 @@ export default function HomeContent() {
             </p>
 
             <div className="mt-4 space-y-3">
-              {displayedConfessions.length > 0 ? (
-                displayedConfessions.map((item) => (
+              {groupedConfessions.length > 0 ? (
+                groupedConfessions.map((item) => (
                   <article
-                    key={`${item.churchName}-${item.service.day}-${item.service.time}`}
+                    key={`${item.parishName}-${item.churchName}-${item.churchAddress}`}
                     className="border-b border-stone-200 pb-4"
                   >
                     <h3 className="font-semibold text-stone-900">{item.churchName}</h3>
@@ -289,11 +323,15 @@ export default function HomeContent() {
                       <span className="font-medium">Paróquia:</span> {item.parishName}
                     </p>
                     <p className="text-sm text-stone-800">
-                      <span className="font-medium">Horário:</span> {item.service.day}, {item.service.time}
+                      <span className="font-medium">Horários:</span>{" "}
+                      {item.services
+                        .map((service) =>
+                          service.notes
+                            ? `${service.day}, ${service.time} (${service.notes})`
+                            : `${service.day}, ${service.time}`,
+                        )
+                        .join(" · ")}
                     </p>
-                    {item.service.notes ? (
-                      <p className="text-sm text-stone-600">{item.service.notes}</p>
-                    ) : null}
                   </article>
                 ))
               ) : (
@@ -306,10 +344,10 @@ export default function HomeContent() {
             <h2 className="text-2xl font-semibold text-stone-900">Horários e locais de missa</h2>
 
             <div className="mt-4 space-y-3">
-              {displayedMasses.length > 0 ? (
-                displayedMasses.map((item) => (
+              {groupedMasses.length > 0 ? (
+                groupedMasses.map((item) => (
                   <article
-                    key={`${item.churchName}-${item.service.day}-${item.service.time}`}
+                    key={`${item.parishName}-${item.churchName}-${item.churchAddress}`}
                     className="border-b border-stone-200 pb-4"
                   >
                     <h3 className="font-semibold text-stone-900">{item.churchName}</h3>
@@ -318,11 +356,15 @@ export default function HomeContent() {
                       <span className="font-medium">Paróquia:</span> {item.parishName}
                     </p>
                     <p className="text-sm text-stone-800">
-                      <span className="font-medium">Horário:</span> {item.service.day}, {item.service.time}
+                      <span className="font-medium">Horários:</span>{" "}
+                      {item.services
+                        .map((service) =>
+                          service.notes
+                            ? `${service.day}, ${service.time} (${service.notes})`
+                            : `${service.day}, ${service.time}`,
+                        )
+                        .join(" · ")}
                     </p>
-                    {item.service.notes ? (
-                      <p className="text-sm text-stone-600">{item.service.notes}</p>
-                    ) : null}
                   </article>
                 ))
               ) : (
