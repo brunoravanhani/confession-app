@@ -82,6 +82,32 @@ function getRelativeDayInPortuguese(daysFromToday: number): string {
   }).format(baseDate);
 }
 
+function getCurrentTimeInCuiaba(): { hours: number; minutes: number } {
+  const parts = new Intl.DateTimeFormat("pt-BR", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+    timeZone: "America/Cuiaba",
+  })
+    .formatToParts(new Date())
+    .reduce<Record<string, string>>((acc, p) => {
+      acc[p.type] = p.value;
+      return acc;
+    }, {});
+
+  return { hours: parseInt(parts.hour, 10), minutes: parseInt(parts.minute, 10) };
+}
+
+function isServiceInFuture(serviceTime: string, currentHours: number, currentMinutes: number): boolean {
+  const [h, m] = serviceTime.split(":").map(Number);
+  return h > currentHours || (h === currentHours && m > currentMinutes);
+}
+
+function getTimeInMinutes(serviceTime: string): number {
+  const [h, m] = serviceTime.split(":").map(Number);
+  return h * 60 + m;
+}
+
 function getServicesByType(cityEntry: CityEntry, serviceType: number): ServiceItem[] {
   return cityEntry.parishes.flatMap((parish) =>
     parish.churches.flatMap((church) =>
@@ -134,8 +160,7 @@ function ChurchLocationDetails({ address, location }: { address: string; locatio
 
 export default function HomeContent() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [showToday, setShowToday] = useState(true);
-  const [showTomorrow, setShowTomorrow] = useState(false);
+  const [showTodayTomorrow, setShowTodayTomorrow] = useState(true);
 
   const data = parishesData as ParishesData;
   const dioceseInfo = data[CITY_SLUG];
@@ -148,7 +173,7 @@ export default function HomeContent() {
   const tomorrowNormalized = normalizeDay(tomorrow);
   const normalizedSearch = normalizeText(searchQuery);
 
-  const shouldFilterByDay = showToday || showTomorrow;
+  const currentTime = getCurrentTimeInCuiaba();
 
   const matchesName = (item: ServiceItem): boolean => {
     if (!normalizedSearch) return true;
@@ -160,12 +185,19 @@ export default function HomeContent() {
   };
 
   const matchesDayFilter = (item: ServiceItem): boolean => {
-    if (!shouldFilterByDay) return true;
+    if (!showTodayTomorrow) return true;
 
     const serviceDay = normalizeDay(item.service.day);
 
-    return (showToday && serviceDay === todayNormalized) ||
-      (showTomorrow && serviceDay === tomorrowNormalized);
+    if (serviceDay === todayNormalized) {
+      return isServiceInFuture(item.service.time, currentTime.hours, currentTime.minutes);
+    }
+
+    if (serviceDay === tomorrowNormalized) {
+      return true;
+    }
+
+    return false;
   };
 
   const filteredConfessions = allConfessions.filter((item) => {
@@ -175,6 +207,25 @@ export default function HomeContent() {
   const filteredMasses = masses.filter((item) => {
     return matchesName(item) && matchesDayFilter(item);
   });
+
+  const sortByDayAndTimeAsc = (a: ServiceItem, b: ServiceItem): number => {
+    const dayOrder = (day: string): number => {
+      if (day === todayNormalized) return 0;
+      if (day === tomorrowNormalized) return 1;
+      return 2;
+    };
+
+    const dayComparison = dayOrder(normalizeDay(a.service.day)) - dayOrder(normalizeDay(b.service.day));
+    if (dayComparison !== 0) return dayComparison;
+
+    return getTimeInMinutes(a.service.time) - getTimeInMinutes(b.service.time);
+  };
+
+  const displayedConfessions = showTodayTomorrow
+    ? [...filteredConfessions].sort(sortByDayAndTimeAsc)
+    : filteredConfessions;
+
+  const displayedMasses = showTodayTomorrow ? [...filteredMasses].sort(sortByDayAndTimeAsc) : filteredMasses;
 
   return (
     <div className="min-h-full flex-1 bg-white px-4 py-10">
@@ -204,25 +255,14 @@ export default function HomeContent() {
               <div className="mt-3 flex flex-wrap gap-2">
                 <button
                   type="button"
-                  onClick={() => setShowToday((current) => !current)}
+                  onClick={() => setShowTodayTomorrow((current) => !current)}
                   className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${
-                    showToday
+                    showTodayTomorrow
                       ? "border-amber-600 bg-amber-100 text-amber-900"
                       : "border-stone-300 bg-white text-stone-700 hover:border-stone-400"
                   }`}
                 >
-                  Hoje
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setShowTomorrow((current) => !current)}
-                  className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${
-                    showTomorrow
-                      ? "border-amber-600 bg-amber-100 text-amber-900"
-                      : "border-stone-300 bg-white text-stone-700 hover:border-stone-400"
-                  }`}
-                >
-                  Amanhã
+                  Hoje e amanhã
                 </button>
               </div>
             </div>
@@ -231,16 +271,14 @@ export default function HomeContent() {
           <section className="mb-10 border-b border-stone-200 pb-8">
             <h2 className="text-2xl font-semibold text-amber-900">Onde confessar hoje?</h2>
             <p className="mt-1 text-sm text-amber-800">
-              {showToday || showTomorrow
-                ? `Filtrando por: ${[showToday ? "Hoje" : "", showTomorrow ? "Amanhã" : ""]
-                    .filter(Boolean)
-                    .join(" e ")}.`
+              {showTodayTomorrow
+                ? "Filtrando por hoje e amanhã. Apenas horários futuros."
                 : "Sem filtro de dia. Exibindo todos os horários cadastrados."}
             </p>
 
             <div className="mt-4 space-y-3">
-              {filteredConfessions.length > 0 ? (
-                filteredConfessions.map((item) => (
+              {displayedConfessions.length > 0 ? (
+                displayedConfessions.map((item) => (
                   <article
                     key={`${item.churchName}-${item.service.day}-${item.service.time}`}
                     className="border-b border-stone-200 pb-4"
@@ -268,8 +306,8 @@ export default function HomeContent() {
             <h2 className="text-2xl font-semibold text-stone-900">Horários e locais de missa</h2>
 
             <div className="mt-4 space-y-3">
-              {filteredMasses.length > 0 ? (
-                filteredMasses.map((item) => (
+              {displayedMasses.length > 0 ? (
+                displayedMasses.map((item) => (
                   <article
                     key={`${item.churchName}-${item.service.day}-${item.service.time}`}
                     className="border-b border-stone-200 pb-4"
