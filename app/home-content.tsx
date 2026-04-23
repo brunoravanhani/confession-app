@@ -57,6 +57,7 @@ type GroupedServiceItem = {
 const MASS_TYPE = 1;
 const CONFESSION_TYPE = 2;
 const CITY_SLUG = "cuiaba";
+const ITEMS_PER_PAGE = 8;
 
 function normalizeDay(day: string): string {
   return day
@@ -190,9 +191,49 @@ function ChurchLocationDetails({ address, location }: { address: string; locatio
   );
 }
 
+function PaginationControls({
+  currentPage,
+  totalPages,
+  onPageChange,
+}: {
+  currentPage: number;
+  totalPages: number;
+  onPageChange: (page: number) => void;
+}) {
+  if (totalPages <= 1) return null;
+
+  return (
+    <div className="mt-5 flex items-center justify-between gap-3 border-t border-stone-200 pt-4">
+      <button
+        type="button"
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+        className="rounded-md border border-stone-300 px-3 py-1.5 text-sm font-medium text-stone-700 transition hover:border-stone-400 disabled:cursor-not-allowed disabled:opacity-50"
+      >
+        Anterior
+      </button>
+
+      <p className="text-sm text-stone-600">
+        Página {currentPage} de {totalPages}
+      </p>
+
+      <button
+        type="button"
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+        className="rounded-md border border-stone-300 px-3 py-1.5 text-sm font-medium text-stone-700 transition hover:border-stone-400 disabled:cursor-not-allowed disabled:opacity-50"
+      >
+        Próxima
+      </button>
+    </div>
+  );
+}
+
 export default function HomeContent() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showTodayTomorrow, setShowTodayTomorrow] = useState(true);
+  const [confessionsPage, setConfessionsPage] = useState(1);
+  const [massesPage, setMassesPage] = useState(1);
 
   const data = parishesData as ParishesData;
   const dioceseInfo = data[CITY_SLUG];
@@ -261,6 +302,30 @@ export default function HomeContent() {
   const groupedConfessions = groupServicesByChurch(displayedConfessions);
   const groupedMasses = groupServicesByChurch(displayedMasses);
 
+  const confessionTotalPages = Math.max(1, Math.ceil(groupedConfessions.length / ITEMS_PER_PAGE));
+  const massTotalPages = Math.max(1, Math.ceil(groupedMasses.length / ITEMS_PER_PAGE));
+
+  const safeConfessionsPage = Math.min(confessionsPage, confessionTotalPages);
+  const safeMassesPage = Math.min(massesPage, massTotalPages);
+
+  const goToConfessionsPage = (page: number): void => {
+    setConfessionsPage(Math.min(Math.max(page, 1), confessionTotalPages));
+  };
+
+  const goToMassesPage = (page: number): void => {
+    setMassesPage(Math.min(Math.max(page, 1), massTotalPages));
+  };
+
+  const paginatedConfessions = groupedConfessions.slice(
+    (safeConfessionsPage - 1) * ITEMS_PER_PAGE,
+    safeConfessionsPage * ITEMS_PER_PAGE,
+  );
+
+  const paginatedMasses = groupedMasses.slice(
+    (safeMassesPage - 1) * ITEMS_PER_PAGE,
+    safeMassesPage * ITEMS_PER_PAGE,
+  );
+
   return (
     <div className="min-h-full flex-1 bg-white px-4 py-10">
       <main className="w-full">
@@ -281,7 +346,11 @@ export default function HomeContent() {
                 id="name-search"
                 type="search"
                 value={searchQuery}
-                onChange={(event) => setSearchQuery(event.target.value)}
+                onChange={(event) => {
+                  setSearchQuery(event.target.value);
+                  setConfessionsPage(1);
+                  setMassesPage(1);
+                }}
                 placeholder="Igreja ou paróquia"
                 className="w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-900 shadow-sm outline-none ring-amber-200 transition focus:border-amber-500 focus:ring-2"
               />
@@ -289,7 +358,11 @@ export default function HomeContent() {
               <div className="mt-3 flex flex-wrap gap-2">
                 <button
                   type="button"
-                  onClick={() => setShowTodayTomorrow((current) => !current)}
+                  onClick={() => {
+                    setShowTodayTomorrow((current) => !current);
+                    setConfessionsPage(1);
+                    setMassesPage(1);
+                  }}
                   className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${
                     showTodayTomorrow
                       ? "border-amber-600 bg-amber-100 text-amber-900"
@@ -312,12 +385,17 @@ export default function HomeContent() {
 
             <div className="mt-4 space-y-3">
               {groupedConfessions.length > 0 ? (
-                groupedConfessions.map((item) => (
+                paginatedConfessions.map((item) => (
                   <article
                     key={`${item.parishName}-${item.churchName}-${item.churchAddress}`}
                     className="border-b border-stone-200 pb-4"
                   >
-                    <h3 className="font-semibold text-stone-900">{item.churchName}</h3>
+                    <div className="flex items-center gap-2">
+                      <h3 className="font-semibold text-stone-900">{item.churchName}</h3>
+                      <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-amber-900">
+                        Confissão
+                      </span>
+                    </div>
                     <ChurchLocationDetails address={item.churchAddress} location={item.churchLocation} />
                     <p className="mt-2 text-sm text-stone-800">
                       <span className="font-medium">Paróquia:</span> {item.parishName}
@@ -337,6 +415,12 @@ export default function HomeContent() {
               ) : (
                 <p className="text-sm text-stone-600">Nenhum horário de confissão encontrado para esta busca.</p>
               )}
+
+              <PaginationControls
+                currentPage={safeConfessionsPage}
+                totalPages={confessionTotalPages}
+                onPageChange={goToConfessionsPage}
+              />
             </div>
           </section>
 
@@ -345,12 +429,17 @@ export default function HomeContent() {
 
             <div className="mt-4 space-y-3">
               {groupedMasses.length > 0 ? (
-                groupedMasses.map((item) => (
+                paginatedMasses.map((item) => (
                   <article
                     key={`${item.parishName}-${item.churchName}-${item.churchAddress}`}
                     className="border-b border-stone-200 pb-4"
                   >
-                    <h3 className="font-semibold text-stone-900">{item.churchName}</h3>
+                    <div className="flex items-center gap-2">
+                      <h3 className="font-semibold text-stone-900">{item.churchName}</h3>
+                      <span className="rounded-full bg-stone-200 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-stone-800">
+                        Missa
+                      </span>
+                    </div>
                     <ChurchLocationDetails address={item.churchAddress} location={item.churchLocation} />
                     <p className="mt-2 text-sm text-stone-800">
                       <span className="font-medium">Paróquia:</span> {item.parishName}
@@ -370,6 +459,12 @@ export default function HomeContent() {
               ) : (
                 <p className="text-sm text-stone-600">Nenhuma missa encontrada para esta busca.</p>
               )}
+
+              <PaginationControls
+                currentPage={safeMassesPage}
+                totalPages={massTotalPages}
+                onPageChange={goToMassesPage}
+              />
             </div>
           </section>
         </div>
