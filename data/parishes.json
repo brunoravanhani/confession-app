@@ -31,8 +31,7 @@
                         "name": "Igreja Matriz São José Operário",
                         "address": "Rua Comendador Henrique, 1040, Dom Aquino, Cuiabá, MT, Brazil",
                         "location": {
-                            "latitude": -15.5989,
-                            "longitude": -56.0949
+                            "link": "https://maps.app.goo.gl/PrNdp8JsNj88Z3Rk7"
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
@@ -57,8 +56,7 @@
                         "name": "Comunidade São Paulo Apóstolo",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
@@ -69,8 +67,7 @@
                         "name": "Comunidade São Mateus",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
@@ -81,8 +78,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
@@ -94,8 +90,7 @@
                         "name": "Comunidade São João Batista",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
@@ -107,8 +102,7 @@
                         "name": "Comunidade Santa Teresinha",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
@@ -143,8 +137,7 @@
                         "name": "Catedral Basílica Senhor Bom Jesus de Cuiabá",
                         "address": "Praça da República Nº01, Centro Norte, CEP: 78005970 - Cuiabá-MT CAIXA POSTAL 216",
                         "location": {
-                            "latitude": -15.5977394,
-                            "longitude": -56.0958926
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "18:30" },
@@ -197,8 +190,7 @@
                         "name": "Matriz Paroquial & Comunidade São João Batista",
                         "address": "217, Rua O, 161 - Morada da Serra, Cuiabá - MT",
                         "location": {
-                            "latitude": -15.5580237,
-                            "longitude": -56.0361741
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:00" },
@@ -216,8 +208,7 @@
                         "name": "Comunidade São José",
                         "address": "Jardim 1º de Março, Cuiabá - MT",
                         "location": {
-                            "latitude": -15.5501499,
-                            "longitude": -56.0346437
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:30" },
@@ -228,8 +219,7 @@
                         "name": "Comunidade Nossa Senhora do Perpétuo Socorro",
                         "address": "Residencial Ilza Terezinha Picolli - Cuiabá- MT",
                         "location": {
-                            "latitude": -15.5501499,
-                            "longitude": -56.0346437
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:00" }
@@ -263,8 +253,7 @@
                         "name": "Cristo Rei",
                         "address": "R. Dep. Emanuel Pinheiro da Silva Primo, 200 - Cristo Rei, Várzea Grande - MT, 78118-015",
                         "location": {
-                            "latitude": -15.6353802,
-                            "longitude": -56.1218083
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
@@ -290,8 +279,7 @@
                         "name": "Comunidade Santa Maria",
                         "address": "1261, R. D, 1191, Várzea Grande - MT",
                         "location": {
-                            "latitude": -15.6370008,
-                            "longitude": -56.1233345
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
@@ -302,8 +290,7 @@
                         "name": "Comunidade São Pedro",
                         "address": "R. São Pedro - Jardim Ikarai, Várzea Grande - MT, 78130-332",
                         "location": {
-                            "latitude": -15.6698187,
-                            "longitude": -56.1757727
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
@@ -314,8 +301,7 @@
                         "name": "Comunidade Nossa Senhora do Migrante",
                         "address": "R. Vaticano Nº 10 Qd-13 Lt10 - Cohab Santa Fé - Cristo Rei, Várzea Grande - MT, 78118-508",
                         "location": {
-                            "latitude": -15.6483506,
-                            "longitude": -56.0928225
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
@@ -326,8 +312,7 @@
                         "name": "Comunidade São Gonçalo",
                         "address": "R. Quatrocentos e Vinte, 2-52 - São Goncalo, Várzea Grande - MT, 78130-620",
                         "location": {
-                            "latitude": -15.6729728,
-                            "longitude": -56.1332345
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:00" }
@@ -337,8 +322,7 @@
                         "name": "Comunidade São João Batista",
                         "address": "R. Maj. João Viêira (Construmat) - Pte. Nova, Várzea Grande - MT, 78115-846",
                         "location": {
-                            "latitude": -15.628071,
-                            "longitude": -56.1075281
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
@@ -349,8 +333,6 @@
                         "name": "Comunidade Sagrado Coração de Jesus",
                         "address": "R. do Independente - Pte. Nova, Várzea Grande - MT",
                         "location": {
-                            "latitude": null,
-                            "longitude": null,
                             "link": "https://maps.app.goo.gl/PsSm6684fYRjaHdY8"
                         },
                         "services": [
@@ -362,8 +344,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida",
                         "address": "Av. Gonçalo Botelho de Campos, 245-299 - Manga, Várzea Grande - MT, 78135-730",
                         "location": {
-                            "latitude": -15.6276166,
-                            "longitude": -56.1328481
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
@@ -384,8 +365,7 @@
                         "name": "Divino Espírito Santo",
                         "address": "Rua Prof. Amaro F. Falcão, 622 - CPA II (Morada da Serra) , Cuiabá, MT, Brazil",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
@@ -417,8 +397,7 @@
                         "name": "Nossa Senhora Aparecida – Cuiabá",
                         "address": "R. E-5, 121 - Jardim Nossa Sra. Aparecida, Cuiabá - MT, 78090-668",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:30", "notes": "1ª Sexta-feira" },
@@ -449,8 +428,7 @@
                         "name": "Nossa Senhora Aparecida – Jangada",
                         "address": "Praça Eleozito José de Almeida s/n, Jangada, MT, Brazil, 78490000",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
@@ -481,8 +459,7 @@
                         "name": "Nossa Senhora da Guia – Cuiabá",
                         "address": "Av. Fernando Correia da Costa, 3342 – Bairro Shangri-lá",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:00" },
@@ -499,8 +476,7 @@
                         "name": "Nossa Senhora da Guia – Distrito da Guia",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
@@ -525,8 +501,7 @@
                         "name": "Nossa Senhora da Guia – Várzea Grande",
                         "address": "Centro Norte, Várzea Grande - MT, 78110-400",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:30" },
@@ -564,8 +539,7 @@
                         "name": "Nossa Senhora das Graças",
                         "address": "Av. Maracanã, 401 - Jardim Maringa, Várzea Grande - MT, 78120-500",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
@@ -591,8 +565,7 @@
                         "name": "Nossa Senhora de Brotas",
                         "address": "78485-000",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
@@ -618,8 +591,7 @@
                         "name": "Nossa Senhora de Guadalupe",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
@@ -646,8 +618,7 @@
                         "name": "Nossa Senhora do Pantanal",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:30" },
@@ -671,8 +642,7 @@
                         "name": "Nossa Senhora do Rosário – Rosário Oeste",
                         "address": "PRAÇA MANOEL LOUREIRO ,23 – ROSÁRIO OESTE – MT Cep: 78480-000",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:00" },
@@ -688,8 +658,7 @@
                         "name": "Comunidade São Francisco – Alto Serra Dourada",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -697,8 +666,7 @@
                         "name": "Comunidade Santa Isabel – Vila Santa Isabel",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -706,8 +674,7 @@
                         "name": "Comunidade Nossa Senhora da Piedade – Taboão",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -715,8 +682,7 @@
                         "name": "Comunidade São Benedito – São Benedito",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -724,8 +690,7 @@
                         "name": "Comunidade São João Batista – Aeroporto",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -733,8 +698,7 @@
                         "name": "Comunidade São José – Monjolo",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -742,8 +706,7 @@
                         "name": "Comunidade Santa Luzia – Torre",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -751,8 +714,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Nossa Senhora Aparecida",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -760,8 +722,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Angical",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -769,8 +730,7 @@
                         "name": "Comunidade Divino Espírito Santo – Barreiro Vermelho",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -778,8 +738,7 @@
                         "name": "Comunidade São Pedro – Cachoeirinha",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -787,8 +746,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Acopari",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -796,8 +754,7 @@
                         "name": "Comunidade São Gonçalo – Castiçal",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -805,8 +762,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Cedral grande",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -814,8 +770,7 @@
                         "name": "Comunidade Menino Jesus de Praga – Figueira",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -823,8 +778,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Fonte Estevão",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -832,8 +786,7 @@
                         "name": "Comunidade Nossa Senhora da Guia – Sítio Igrejinha Sales",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -841,8 +794,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Limeira",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -850,8 +802,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Fonte Estevão",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -859,8 +810,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Sítio Manoel João",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -868,8 +818,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Nicolau",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -877,8 +826,7 @@
                         "name": "Comunidade São Benedito – Novo Horizonte",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -886,8 +834,7 @@
                         "name": "Comunidade São João – Pai Caetano",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -895,8 +842,7 @@
                         "name": "Comunidade na Escola – Assentamento Raizama – BR 163",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -904,8 +850,7 @@
                         "name": "Comunidade Divino Pai Eterno – Distrito Sede",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -913,8 +858,7 @@
                         "name": "Comunidade Sant’ Ana – Passagem do Chiqueiro",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -922,8 +866,7 @@
                         "name": "Comunidade São Pedro – Pescaria de Baixo",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -931,8 +874,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Pindaival",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -940,8 +882,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Pindura",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -949,8 +890,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Ponte do Engenho",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -958,8 +898,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Porto Alegre",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -967,8 +906,7 @@
                         "name": "Comunidade São Benedito – Ribeirão Grande",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -976,8 +914,7 @@
                         "name": "Comunidade São Pedro – São Pedro",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -985,8 +922,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Várzea das Pedras",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -994,8 +930,7 @@
                         "name": "Comunidade São Sebastião barreiro Branco – Fazenda Moacir Lima",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1003,8 +938,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Barreiro Branco",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1012,8 +946,7 @@
                         "name": "Comunidade São Benedito – Barreiro branco Fazenda Nandáia",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1021,8 +954,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Barreiro Branco Fazenda Leonalva",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1030,8 +962,7 @@
                         "name": "Comunidade São Sebastião barreiro branco fazenda catequista",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1039,8 +970,7 @@
                         "name": "Comunidade São Benedito – Sitio da ponte",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1048,8 +978,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Quati",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1057,8 +986,7 @@
                         "name": "Comunidade Capãozinho",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1066,8 +994,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida – Raizama",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     }
@@ -1085,8 +1012,7 @@
                         "name": "Nossa Senhora do Rosário e São Benedito",
                         "address": "Praça do Rosário, 01 - Baú, Cuiabá - MT, 78008-450",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "05:00" },
@@ -1117,8 +1043,7 @@
                         "name": "Nossa Senhora Mãe dos Homens",
                         "address": "Marechal Floriano Peixoto, 611 Quilombo, CEP 78045-310, Cuiabá-MT",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:00" },
@@ -1151,8 +1076,7 @@
                         "name": "Nossa Senhora Medianeira de Todas as Graças",
                         "address": "Av. Taubaté, 434-482 - Novo Terceiro, Cuiabá - MT, 78028-310",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
@@ -1171,8 +1095,7 @@
                         "name": "Comunidade São José",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1180,8 +1103,7 @@
                         "name": "Comunidade São João Batista",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1189,8 +1111,7 @@
                         "name": "Comunidade São Benedito",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1198,8 +1119,7 @@
                         "name": "Comunidade Nossa Sra. Do Perpétuo Socorro",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1207,8 +1127,7 @@
                         "name": "Comunidade Santa Izabel",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1216,8 +1135,7 @@
                         "name": "Comunidade São Francisco",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1225,8 +1143,7 @@
                         "name": "Comunidade São Benedito do Pari",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1234,8 +1151,7 @@
                         "name": "Comunidade Nossa Sra. de Fátima",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     }
@@ -1253,8 +1169,7 @@
                         "name": "Sagrada Família",
                         "address": "Rua Italia Malpice de Barros, 85 - Carumbé, Cuiabá - MT, 78008-800",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
@@ -1287,8 +1202,7 @@
                         "name": "Santa Edwiges",
                         "address": "R. Bolívia, s/n - Mapim, Várzea Grande - MT, 78143-322",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:30" },
@@ -1309,8 +1223,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:30" },
@@ -1322,8 +1235,7 @@
                         "name": "Comunidade Santo Antônio",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "08:00" },
@@ -1334,8 +1246,7 @@
                         "name": "Comunidade Sagrado Coração de Jesus",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "08:00", "notes": "1° e 3° domingo do mês" }
@@ -1345,8 +1256,7 @@
                         "name": "Comunidade São Paulo Apóstolo",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:30" }
@@ -1356,8 +1266,7 @@
                         "name": "Comunidade São Benedito",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:30" }
@@ -1367,8 +1276,7 @@
                         "name": "Comunidade São José",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "16:00", "notes": "1° sábado" }
@@ -1378,8 +1286,7 @@
                         "name": "Comunidade Bom Jesus - Capão das Antas",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "08:00", "notes": "2° sábado" }
@@ -1389,8 +1296,7 @@
                         "name": "Comunidade São João Batista - Sadia III",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "10:00", "notes": "2° sábado" }
@@ -1400,8 +1306,7 @@
                         "name": "Comunidade Santo Expedito - Ninho das Águias",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "17:00", "notes": "3° sábado" }
@@ -1411,8 +1316,7 @@
                         "name": "Comunidade Santa Luzia",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:30", "notes": "3° sábado" }
@@ -1422,8 +1326,7 @@
                         "name": "Comunidade Jesus, Maria e José",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "16:00", "notes": "4° sábado" }
@@ -1443,8 +1346,7 @@
                         "name": "Santo Antônio – Santo Antônio de Leverger",
                         "address": "Rua Treze de Junho 55, Santo Antônio do Leverger, MT, Brazil",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" },
@@ -1470,8 +1372,7 @@
                         "name": "Santo Antônio de Pádua – Várzea Grande",
                         "address": "R. Henrique Pires de Camargo, 20 - Jardim Ouro Verde, Várzea Grande - MT, 78148-030",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
@@ -1498,8 +1399,7 @@
                         "name": "Santuário Eucarístico Nossa Senhora do Bom Despacho",
                         "address": "Praça do Seminário, s/n - Dom Aquino, Cuiabá - MT, 78015-325",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "07:00" },
@@ -1543,8 +1443,7 @@
                         "name": "Santuário Eucarístico São João Paulo II",
                         "address": "Av. Oátomo Canavarros, 1079 - Bela Vista, Cuiabá - MT, 78050-568",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:30" },
@@ -1573,8 +1472,7 @@
                         "name": "Santuário Nossa Senhora da Medalha Milagrosa",
                         "address": "Av. Brasil, 160, Pascoal Ramos",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" },
@@ -1595,8 +1493,7 @@
                         "name": "São Gonçalo",
                         "address": "Av. XV de Novembro, 664 - Centro Sul, Cuiabá - MT, 78020-300",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:00" },
@@ -1626,8 +1523,7 @@
                         "name": "São João Bosco",
                         "address": "Av. Jornalista Alves de Oliveira, 407, Cuiabá, Brazil",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "15:00" },
@@ -1672,8 +1568,7 @@
                         "name": "São Mateus Apóstolo e Evangelista",
                         "address": "Av. das Palmeiras, S/N - Jardim Universitario, Cuiabá - MT, 78075-850",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "06:00" },
@@ -1692,8 +1587,7 @@
                         "name": "Comunidade Bom Pastor",
                         "address": "",
                         "location": {
-                            "latitude": -15.5989232,
-                            "longitude": -56.0659523
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:00" }
@@ -1703,8 +1597,7 @@
                         "name": "Comunidade Nossa Senhora Aparecida",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:30" },
@@ -1715,8 +1608,7 @@
                         "name": "Comunidade Santa Cruz",
                         "address": "Rua Castro Alves 26 Santa Cruz I, Cuiabá, MT",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "18:00" }
@@ -1726,8 +1618,7 @@
                         "name": "Comunidade São Miguel e Santa Marta",
                         "address": "Rua Alessandria, Jd Itália - Cuiabá/MT",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "10:30" },
@@ -1752,8 +1643,7 @@
                         "name": "São Sebastião – 3 Barras Cuiabá",
                         "address": "Avenia A, Quadra 20, 332, Três Barras, Cuiabá, Brazil 78058513",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "05:30" },
@@ -1777,8 +1667,7 @@
                         "name": "Comunidade Santíssima Trindade – Altos da Glória",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1786,8 +1675,7 @@
                         "name": "Comunidade Bom Jesus de Nazaré – Dr. Fábio Leite II",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1795,8 +1683,7 @@
                         "name": "Comunidade Nossa Senhora da Glória – Altos da Glória",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1804,8 +1691,7 @@
                         "name": "Comunidade Sagrado Coração de Jesus – Dr. Fábio Leite II",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1813,8 +1699,7 @@
                         "name": "Comunidade Sant’Ana e São Joaquim – Residencial Nova Canaã",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1822,8 +1707,7 @@
                         "name": "Comunidade Santa Rita de Cássia – Rural – Antiga Estrada Jurumirim",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1831,8 +1715,7 @@
                         "name": "Comunidade São Jerônimo – Rural – Morro de São Jerônimo",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     },
@@ -1840,8 +1723,7 @@
                         "name": "Comunidade São Benedito e Nossa Senhora Aparecida – Rio dos Médicos",
                         "address": "",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": []
                     }
@@ -1859,8 +1741,7 @@
                         "name": "São Sebastião – Nobres",
                         "address": "Rua Bahia, 361, São José, Nobres 78470000",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
@@ -1901,8 +1782,7 @@
                         "name": "São Sebastião – Várzea Grande",
                         "address": "Av Júlio Campos, nº 3767, Marajoara, Várzea Grande, MT, Brazil",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
@@ -1929,8 +1809,7 @@
                         "name": "Capela São Benedito",
                         "address": "Residencial São Benedito, Várzea Grande, MT",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:30" }
@@ -1940,8 +1819,7 @@
                         "name": "Capela Nossa Senhora das Graças",
                         "address": "Água Vermelha",
                         "location": {
-                            "latitude": -15.650887,
-                            "longitude": -56.147854
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:00" }
@@ -1951,8 +1829,7 @@
                         "name": "Noviciado São José",
                         "address": "Bairro São Marcos",
                         "location": {
-                            "latitude": -15.643551,
-                            "longitude": -56.169042
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" }
@@ -1962,8 +1839,7 @@
                         "name": "Capela Menino Jesus de Praga",
                         "address": "Jardim El Dourado, Várzea Grande, MT",
                         "location": {
-                            "latitude": -15.657445,
-                            "longitude": -56.187751
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" }
@@ -1973,8 +1849,7 @@
                         "name": "Capela São Vicente de Paulo",
                         "address": "Jardim Glória",
                         "location": {
-                            "latitude": -15.644278,
-                            "longitude": -56.149107
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" }
@@ -1984,8 +1859,7 @@
                         "name": "Capela Santa Rita de Cássia",
                         "address": "Estrela Dalva",
                         "location": {
-                            "latitude": -15.645723,
-                            "longitude": -56.163661
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" }
@@ -1995,8 +1869,7 @@
                         "name": "Capela São Francisco de Assis",
                         "address": "Bairro São Marcos",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" }
@@ -2006,8 +1879,7 @@
                         "name": "Capela Sagrada Familia",
                         "address": "Marajoara",
                         "location": {
-                            "latitude": -15.654436,
-                            "longitude": -56.155849
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "18:00" }
@@ -2017,8 +1889,7 @@
                         "name": "Capela São Mateus",
                         "address": "São Mateus",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "18:00" }
@@ -2028,8 +1899,7 @@
                         "name": "Capela Nossa Senhora Rosa Mistica",
                         "address": "Jardim Gloria",
                         "location": {
-                            "latitude": -15.641198,
-                            "longitude": -56.148725
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "18:00" }
@@ -2039,8 +1909,7 @@
                         "name": "Capela Nossa Senhora Rainha da Paz",
                         "address": "Serra Dourada",
                         "location": {
-                            "latitude": -15.623352,
-                            "longitude": -56.145833
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:00" }
@@ -2050,8 +1919,7 @@
                         "name": "Capela Nossa Senhora Aparecida",
                         "address": "Cidade de Deus",
                         "location": {
-                            "latitude": -15.653042,
-                            "longitude": -56.184398
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:30" }
@@ -2061,8 +1929,7 @@
                         "name": "Capela Nossa Senhora da Glória",
                         "address": "Jardim Glória",
                         "location": {
-                            "latitude": -15.636774,
-                            "longitude": -56.15629
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" }
@@ -2072,8 +1939,7 @@
                         "name": "Capela São Pedro",
                         "address": "Jardim Itororó",
                         "location": {
-                            "latitude": -15.662186,
-                            "longitude": -56.173633
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" }
@@ -2083,8 +1949,7 @@
                         "name": "Capela Santa Isabel da Hungria",
                         "address": "Santa Isabel",
                         "location": {
-                            "latitude": -15.651784,
-                            "longitude": -56.173447
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" }
@@ -2094,8 +1959,7 @@
                         "name": "Capela Sagrado Coração de Jesus",
                         "address": "Jardim Alá, Varze Grande, MT",
                         "location": {
-                            "latitude": -15.6310181,
-                            "longitude": -56.1557443
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" }
@@ -2105,8 +1969,7 @@
                         "name": "Capela Nossa Senhora Aparecida",
                         "address": "São Mateus, Várzea Grande, MT",
                         "location": {
-                            "latitude": -15.667436,
-                            "longitude": -56.184017
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" }
@@ -2116,8 +1979,7 @@
                         "name": "Capela São João Batista",
                         "address": "Asa Bela, Várzea Grande, MT",
                         "location": {
-                            "latitude": -15.657407,
-                            "longitude": -56.17601
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" }
@@ -2127,8 +1989,7 @@
                         "name": "Capela Santa Teresinha do Menino Jesus",
                         "address": "Vila Arthur",
                         "location": {
-                            "latitude": -15.636305,
-                            "longitude": -56.148199
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" }
@@ -2138,8 +1999,7 @@
                         "name": "Capela Nossa Senhora do Perpétuo Socorro",
                         "address": "Marajoara II, Várzea Grande, MT",
                         "location": {
-                            "latitude": -15.65626,
-                            "longitude": -56.162718
+                            "link": ""
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" }

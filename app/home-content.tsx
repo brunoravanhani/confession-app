@@ -11,9 +11,16 @@ type Service = {
   notes?: string;
 };
 
+type ChurchLocation = {
+  latitude?: number | null;
+  longitude?: number | null;
+  link?: string;
+};
+
 type Church = {
   name: string;
   address: string;
+  location?: ChurchLocation;
   services: Service[];
 };
 
@@ -35,6 +42,7 @@ type ServiceItem = {
   parishName: string;
   churchName: string;
   churchAddress: string;
+  churchLocation?: ChurchLocation;
   service: Service;
 };
 
@@ -83,9 +91,44 @@ function getServicesByType(cityEntry: CityEntry, serviceType: number): ServiceIt
           parishName: parish.name,
           churchName: church.name,
           churchAddress: church.address,
+          churchLocation: church.location,
           service,
         })),
     ),
+  );
+}
+
+function getGoogleMapsLink(location?: ChurchLocation): string | null {
+  if (location?.link) {
+    return location.link;
+  }
+
+  if (typeof location?.latitude === "number" && typeof location?.longitude === "number") {
+    return `https://www.google.com/maps/search/?api=1&query=${location.latitude},${location.longitude}`;
+  }
+
+  return null;
+}
+
+function ChurchLocationDetails({ address, location }: { address: string; location?: ChurchLocation }) {
+  const googleMapsLink = getGoogleMapsLink(location);
+
+  return (
+    <>
+      <p className="text-sm text-stone-700">{address}</p>
+      {googleMapsLink ? (
+        <p className="mt-1 text-sm">
+          <a
+            href={googleMapsLink}
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium text-amber-800 underline decoration-amber-300 underline-offset-2 transition hover:text-amber-900"
+          >
+            Ver no Google Maps
+          </a>
+        </p>
+      ) : null}
+    </>
   );
 }
 
@@ -203,7 +246,7 @@ export default function HomeContent() {
                     className="border-b border-stone-200 pb-4"
                   >
                     <h3 className="font-semibold text-stone-900">{item.churchName}</h3>
-                    <p className="text-sm text-stone-700">{item.churchAddress}</p>
+                    <ChurchLocationDetails address={item.churchAddress} location={item.churchLocation} />
                     <p className="mt-2 text-sm text-stone-800">
                       <span className="font-medium">Paróquia:</span> {item.parishName}
                     </p>
@@ -232,7 +275,7 @@ export default function HomeContent() {
                     className="border-b border-stone-200 pb-4"
                   >
                     <h3 className="font-semibold text-stone-900">{item.churchName}</h3>
-                    <p className="text-sm text-stone-700">{item.churchAddress}</p>
+                    <ChurchLocationDetails address={item.churchAddress} location={item.churchLocation} />
                     <p className="mt-2 text-sm text-stone-800">
                       <span className="font-medium">Paróquia:</span> {item.parishName}
                     </p>

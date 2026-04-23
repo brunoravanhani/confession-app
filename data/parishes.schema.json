@@ -120,9 +120,11 @@
         },
         "longitude": {
           "$ref": "#/$defs/nullableNumber"
+        },
+        "link": {
+          "type": "string"
         }
       },
-      "required": ["latitude", "longitude"],
       "additionalProperties": false
     },
     "service": {
