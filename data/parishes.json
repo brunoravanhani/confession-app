@@ -123,14 +123,28 @@
                 "phone": "65 3321 2729 / 65 99983 2729",
                 "email": "catedralbasilica@cuiabaarquidiocese.net",
                 "website": "",
-                "instagram": "",
+                "instagram": "https://www.instagram.com/catedraldecuiaba",
+                "priests": [
+                    {
+                        "name": "Padre Deusdedit Monge de Almeida",
+                        "role": "Vigário"
+                    },
+                    {
+                        "name": "Padre Orivaldo Egídio da Silva",
+                        "role": "Vigário"
+                    },
+                    {
+                        "name": "Padre Evandro Balena de Brito",
+                        "role": "Vigário"
+                    }
+                ],
                 "churches": [
                     {
                         "name": "Catedral Basílica Senhor Bom Jesus de Cuiabá",
                         "address": "Praça da República Nº01, Centro Norte, CEP: 78005970 - Cuiabá-MT CAIXA POSTAL 216",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "latitude": -15.5977394,
+                            "longitude": -56.0958926
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "18:30" },
@@ -166,15 +180,25 @@
                 "address": "217, Rua O, 161 - Morada da Serra, Cuiabá - MT",
                 "phone": "65 99352-2378",
                 "email": "paroquiacim@hotmail.com",
-                "website": "",
-                "instagram": "",
+                "website": "https://api.whatsapp.com/send/?phone=5565993522378&text&type=phone_number",
+                "instagram": "https://www.instagram.com/paroquiacimaculadodemaria",
+                "priests": [
+                    {
+                        "name": "Padre Felix Sebastião de Almeida",
+                        "role": "Pároco"
+                    },
+                    {
+                        "name": "Padre Izaías Bernardo Monteiro da Silva",
+                        "role": "Vigário"
+                    }
+                ],
                 "churches": [
                     {
-                        "name": "Coração Imaculado de Maria",
+                        "name": "Matriz Paroquial & Comunidade São João Batista",
                         "address": "217, Rua O, 161 - Morada da Serra, Cuiabá - MT",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "latitude": -15.5580237,
+                            "longitude": -56.0361741
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "19:00" },
@@ -185,11 +209,30 @@
                             { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "07:00" },
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "06:30" },
                             { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" },
-                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" },
-                            { "type": 2, "type_name": "Confissão", "day": "Terça-feira", "time": "14:30", "notes": "Até 17:00" },
-                            { "type": 2, "type_name": "Confissão", "day": "Quarta-feira", "time": "14:30", "notes": "Até 17:00" },
-                            { "type": 2, "type_name": "Confissão", "day": "Quinta-feira", "time": "14:30", "notes": "Até 17:00" },
-                            { "type": 2, "type_name": "Confissão", "day": "Sexta-feira", "time": "14:30", "notes": "Até 17:00" }
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São José",
+                        "address": "Jardim 1º de Março, Cuiabá - MT",
+                        "location": {
+                            "latitude": -15.5501499,
+                            "longitude": -56.0346437
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Terça-feira", "time": "19:30" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora do Perpétuo Socorro",
+                        "address": "Residencial Ilza Terezinha Picolli - Cuiabá- MT",
+                        "location": {
+                            "latitude": -15.5501499,
+                            "longitude": -56.0346437
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:00" }
                         ]
                     }
                 ]
@@ -199,15 +242,29 @@
                 "address": "R. Dep. Emanuel Pinheiro da Silva Primo, 200 - Cristo Rei, Várzea Grande - MT, 78118-015",
                 "phone": "65 3685 2097 / 65 9991-0784",
                 "email": "pcristorei@cuiabaarquidiocese.net",
-                "website": "",
-                "instagram": "",
+                "website": "https://api.whatsapp.com/send/?phone=5565999910784&text&type=phone_number",
+                "instagram": "https://www.instagram.com/paroquiacristoreivg",
+                "priests": [
+                    {
+                        "name": "Padre Overland Moraes da Costa",
+                        "role": "Pároco"
+                    },
+                    {
+                        "name": "Padre Marcus Vinicius Rosa Diniz",
+                        "role": "Vigário"
+                    },
+                    {
+                        "name": "Padre Paulo Ricardo de Azevedo Júnior",
+                        "role": "Vigário"
+                    }
+                ],
                 "churches": [
                     {
                         "name": "Cristo Rei",
                         "address": "R. Dep. Emanuel Pinheiro da Silva Primo, 200 - Cristo Rei, Várzea Grande - MT, 78118-015",
                         "location": {
-                            "latitude": null,
-                            "longitude": null
+                            "latitude": -15.6353802,
+                            "longitude": -56.1218083
                         },
                         "services": [
                             { "type": 1, "type_name": "Missa", "day": "Segunda-feira", "time": "06:00" },
@@ -227,6 +284,90 @@
                             { "type": 2, "type_name": "Confissão", "day": "Sábado", "time": "06:00" },
                             { "type": 2, "type_name": "Confissão", "day": "Domingo", "time": "07:00", "notes": "Durante a missa e se estende até a missa das 09:00" },
                             { "type": 2, "type_name": "Confissão", "day": "Domingo", "time": "17:00", "notes": "Se estende até a missa das 19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Santa Maria",
+                        "address": "1261, R. D, 1191, Várzea Grande - MT",
+                        "location": {
+                            "latitude": -15.6370008,
+                            "longitude": -56.1233345
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São Pedro",
+                        "address": "R. São Pedro - Jardim Ikarai, Várzea Grande - MT, 78130-332",
+                        "location": {
+                            "latitude": -15.6698187,
+                            "longitude": -56.1757727
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "19:30" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora do Migrante",
+                        "address": "R. Vaticano Nº 10 Qd-13 Lt10 - Cohab Santa Fé - Cristo Rei, Várzea Grande - MT, 78118-508",
+                        "location": {
+                            "latitude": -15.6483506,
+                            "longitude": -56.0928225
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "09:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São Gonçalo",
+                        "address": "R. Quatrocentos e Vinte, 2-52 - São Goncalo, Várzea Grande - MT, 78130-620",
+                        "location": {
+                            "latitude": -15.6729728,
+                            "longitude": -56.1332345
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sábado", "time": "19:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade São João Batista",
+                        "address": "R. Maj. João Viêira (Construmat) - Pte. Nova, Várzea Grande - MT, 78115-846",
+                        "location": {
+                            "latitude": -15.628071,
+                            "longitude": -56.1075281
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Quarta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "08:30" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Sagrado Coração de Jesus",
+                        "address": "R. do Independente - Pte. Nova, Várzea Grande - MT",
+                        "location": {
+                            "latitude": null,
+                            "longitude": null,
+                            "link": "https://maps.app.goo.gl/PsSm6684fYRjaHdY8"
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Sexta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "07:00" }
+                        ]
+                    },
+                    {
+                        "name": "Comunidade Nossa Senhora Aparecida",
+                        "address": "Av. Gonçalo Botelho de Campos, 245-299 - Manga, Várzea Grande - MT, 78135-730",
+                        "location": {
+                            "latitude": -15.6276166,
+                            "longitude": -56.1328481
+                        },
+                        "services": [
+                            { "type": 1, "type_name": "Missa", "day": "Quinta-feira", "time": "19:00" },
+                            { "type": 1, "type_name": "Missa", "day": "Domingo", "time": "18:00" }
                         ]
                     }
                 ]
