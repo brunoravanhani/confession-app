@@ -12,9 +12,6 @@
   },
   "additionalProperties": false,
   "$defs": {
-    "nullableNumber": {
-      "type": ["number", "null"]
-    },
     "cityEntry": {
       "type": "object",
       "properties": {
@@ -46,6 +43,9 @@
         "name": {
           "type": "string"
         },
+        "slug": {
+          "type": "string"
+        },
         "address": {
           "type": "string"
         },
@@ -74,7 +74,7 @@
           }
         }
       },
-      "required": ["name", "address", "phone", "email", "website", "instagram", "churches"],
+      "required": ["name", "slug", "address", "phone", "email", "website", "instagram", "churches"],
       "additionalProperties": false
     },
     "priest": {
@@ -115,16 +115,11 @@
     "location": {
       "type": "object",
       "properties": {
-        "latitude": {
-          "$ref": "#/$defs/nullableNumber"
-        },
-        "longitude": {
-          "$ref": "#/$defs/nullableNumber"
-        },
         "link": {
           "type": "string"
         }
       },
+      "required": ["link"],
       "additionalProperties": false
     },
     "service": {
