@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import parishesData from "@/data/parishes.json";
 
@@ -26,6 +27,7 @@ type Church = {
 
 type Parish = {
   name: string;
+  slug: string;
   churches: Church[];
 };
 
@@ -40,6 +42,7 @@ type ParishesData = Record<string, CityEntry>;
 
 type ServiceItem = {
   parishName: string;
+  parishSlug: string;
   churchName: string;
   churchAddress: string;
   churchLocation?: ChurchLocation;
@@ -48,6 +51,7 @@ type ServiceItem = {
 
 type GroupedServiceItem = {
   parishName: string;
+  parishSlug: string;
   churchName: string;
   churchAddress: string;
   churchLocation?: ChurchLocation;
@@ -121,7 +125,7 @@ function groupServicesByChurch(items: ServiceItem[]): GroupedServiceItem[] {
   const groups = new Map<string, GroupedServiceItem>();
 
   items.forEach((item) => {
-    const key = `${item.parishName}|${item.churchName}|${item.churchAddress}`;
+    const key = `${item.parishSlug}|${item.churchName}|${item.churchAddress}`;
     const existing = groups.get(key);
 
     if (existing) {
@@ -131,6 +135,7 @@ function groupServicesByChurch(items: ServiceItem[]): GroupedServiceItem[] {
 
     groups.set(key, {
       parishName: item.parishName,
+      parishSlug: item.parishSlug,
       churchName: item.churchName,
       churchAddress: item.churchAddress,
       churchLocation: item.churchLocation,
@@ -148,6 +153,7 @@ function getServicesByType(cityEntry: CityEntry, serviceType: number): ServiceIt
         .filter((service) => service.type === serviceType)
         .map((service) => ({
           parishName: parish.name,
+          parishSlug: parish.slug,
           churchName: church.name,
           churchAddress: church.address,
           churchLocation: church.location,
@@ -398,7 +404,13 @@ export default function HomeContent() {
                     </div>
                     <ChurchLocationDetails address={item.churchAddress} location={item.churchLocation} />
                     <p className="mt-2 text-sm text-stone-800">
-                      <span className="font-medium">Paróquia:</span> {item.parishName}
+                      <span className="font-medium">Paróquia:</span> {item.parishName}{" "}
+                      <Link
+                        href={`/parish/${item.parishSlug}`}
+                        className="font-medium text-amber-800 underline decoration-amber-300 underline-offset-2"
+                      >
+                        Ver detalhes
+                      </Link>
                     </p>
                     <p className="text-sm text-stone-800">
                       <span className="font-medium">Horários:</span>{" "}
@@ -442,7 +454,13 @@ export default function HomeContent() {
                     </div>
                     <ChurchLocationDetails address={item.churchAddress} location={item.churchLocation} />
                     <p className="mt-2 text-sm text-stone-800">
-                      <span className="font-medium">Paróquia:</span> {item.parishName}
+                      <span className="font-medium">Paróquia:</span> {item.parishName}{" "}
+                      <Link
+                        href={`/parish/${item.parishSlug}`}
+                        className="font-medium text-amber-800 underline decoration-amber-300 underline-offset-2"
+                      >
+                        Ver detalhes
+                      </Link>
                     </p>
                     <p className="text-sm text-stone-800">
                       <span className="font-medium">Horários:</span>{" "}
