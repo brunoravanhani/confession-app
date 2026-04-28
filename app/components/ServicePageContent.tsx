@@ -56,6 +56,7 @@ export default function ServicePageContent({
   const todayNormalized = normalizeDay(today);
   const tomorrowNormalized = normalizeDay(tomorrow);
   const normalizedSearch = normalizeText(searchQuery);
+  const hasDayFilter = showToday || showTomorrow;
 
   const currentTime = getCurrentTimeInCuiaba();
 
@@ -68,6 +69,8 @@ export default function ServicePageContent({
   };
 
   const matchesDayFilter = (item: ServiceItem): boolean => {
+    if (!hasDayFilter) return true;
+
     const serviceDay = normalizeDay(item.service.day);
 
     if (serviceDay === todayNormalized) {
@@ -105,7 +108,7 @@ export default function ServicePageContent({
     return getTimeInMinutes(a.service.time) - getTimeInMinutes(b.service.time);
   };
 
-  const shouldSort = showToday || showTomorrow;
+  const shouldSort = hasDayFilter;
   const displayedServices = shouldSort
     ? [...filteredServices].sort(sortByDayAndTimeAsc)
     : filteredServices;
@@ -243,7 +246,7 @@ export default function ServicePageContent({
             <p className="mt-1 text-sm text-amber-800">
               {dayFilterLabel
                 ? `Filtrando por ${dayFilterLabel}.`
-                : "Selecione um filtro de dia para ver os horários."}
+                : "Exibindo todos os horários."}
             </p>
 
             <div className="mt-4 space-y-3">
