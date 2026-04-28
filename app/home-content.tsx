@@ -237,7 +237,8 @@ function PaginationControls({
 
 export default function HomeContent() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [showTodayTomorrow, setShowTodayTomorrow] = useState(true);
+  const [showToday, setShowToday] = useState(true);
+  const [showTomorrow, setShowTomorrow] = useState(false);
   const [confessionsPage, setConfessionsPage] = useState(1);
   const [massesPage, setMassesPage] = useState(1);
 
@@ -264,16 +265,15 @@ export default function HomeContent() {
   };
 
   const matchesDayFilter = (item: ServiceItem): boolean => {
-    if (!showTodayTomorrow) return true;
-
     const serviceDay = normalizeDay(item.service.day);
 
     if (serviceDay === todayNormalized) {
+      if (!showToday) return false;
       return isServiceInFuture(item.service.time, currentTime.hours, currentTime.minutes);
     }
 
     if (serviceDay === tomorrowNormalized) {
-      return true;
+      return showTomorrow;
     }
 
     return false;
@@ -300,11 +300,13 @@ export default function HomeContent() {
     return getTimeInMinutes(a.service.time) - getTimeInMinutes(b.service.time);
   };
 
-  const displayedConfessions = showTodayTomorrow
+  const shouldSort = showToday || showTomorrow;
+
+  const displayedConfessions = shouldSort
     ? [...filteredConfessions].sort(sortByDayAndTimeAsc)
     : filteredConfessions;
 
-  const displayedMasses = showTodayTomorrow ? [...filteredMasses].sort(sortByDayAndTimeAsc) : filteredMasses;
+  const displayedMasses = shouldSort ? [...filteredMasses].sort(sortByDayAndTimeAsc) : filteredMasses;
   const groupedConfessions = groupServicesByChurch(displayedConfessions);
   const groupedMasses = groupServicesByChurch(displayedMasses);
 
@@ -365,17 +367,32 @@ export default function HomeContent() {
                 <button
                   type="button"
                   onClick={() => {
-                    setShowTodayTomorrow((current) => !current);
+                    setShowToday((current) => !current);
                     setConfessionsPage(1);
                     setMassesPage(1);
                   }}
                   className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${
-                    showTodayTomorrow
+                    showToday
                       ? "border-amber-600 bg-amber-100 text-amber-900"
                       : "border-stone-300 bg-white text-stone-700 hover:border-stone-400"
                   }`}
                 >
-                  Hoje e amanhã
+                  Hoje
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowTomorrow((current) => !current);
+                    setConfessionsPage(1);
+                    setMassesPage(1);
+                  }}
+                  className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${
+                    showTomorrow
+                      ? "border-amber-600 bg-amber-100 text-amber-900"
+                      : "border-stone-300 bg-white text-stone-700 hover:border-stone-400"
+                  }`}
+                >
+                  Amanhã
                 </button>
               </div>
             </div>
@@ -384,9 +401,9 @@ export default function HomeContent() {
           <section className="mb-10 border-b border-stone-200 pb-8">
             <h2 className="text-2xl font-semibold text-amber-900">Onde confessar hoje?</h2>
             <p className="mt-1 text-sm text-amber-800">
-              {showTodayTomorrow
-                ? "Filtrando por hoje e amanhã. Apenas horários futuros."
-                : "Sem filtro de dia. Exibindo todos os horários cadastrados."}
+              {showToday || showTomorrow
+                ? `Filtrando por ${showToday && showTomorrow ? "hoje e amanhã" : showToday ? "hoje" : "amanhã"}.`
+                : "Selecione um filtro de dia para ver os horários."}
             </p>
 
             <div className="mt-4 space-y-3">
