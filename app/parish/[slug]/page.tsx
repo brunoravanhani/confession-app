@@ -109,12 +109,12 @@ export async function generateMetadata({
     title: `${match.parish.name} em ${match.city.city}`,
     description: `Informações da ${match.parish.name}: contatos, igrejas e horários cadastrados.`,
     alternates: {
-      canonical: `/parish/${match.parish.slug}`,
+      canonical: `/paroquia/${match.parish.slug}`,
     },
     openGraph: {
       title: `${match.parish.name} em ${match.city.city}`,
       description: `Veja os dados completos da ${match.parish.name}.`,
-      url: `/parish/${match.parish.slug}`,
+      url: `/paroquia/${match.parish.slug}`,
       locale: "pt_BR",
       type: "website",
     },
