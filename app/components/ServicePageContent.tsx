@@ -28,6 +28,7 @@ type ServicePageContentProps = {
   emptyMessage: string;
   navigationHref: string;
   navigationLabel: string;
+  timeFilterOptions?: string[];
 };
 
 export default function ServicePageContent({
@@ -39,10 +40,12 @@ export default function ServicePageContent({
   emptyMessage,
   navigationHref,
   navigationLabel,
+  timeFilterOptions,
 }: ServicePageContentProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [showToday, setShowToday] = useState(true);
   const [showTomorrow, setShowTomorrow] = useState(false);
+  const [selectedTimes, setSelectedTimes] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
 
   const dioceseInfo = getCityEntry();
@@ -79,8 +82,13 @@ export default function ServicePageContent({
     return false;
   };
 
+  const matchesTimeFilter = (item: ServiceItem): boolean => {
+    if (!timeFilterOptions?.length || selectedTimes.length === 0) return true;
+    return selectedTimes.includes(item.service.time);
+  };
+
   const filteredServices = allServices.filter(
-    (item) => matchesName(item) && matchesDayFilter(item),
+    (item) => matchesName(item) && matchesDayFilter(item) && matchesTimeFilter(item),
   );
 
   const sortByDayAndTimeAsc = (a: ServiceItem, b: ServiceItem): number => {
@@ -191,6 +199,42 @@ export default function ServicePageContent({
                   Amanhã
                 </button>
               </div>
+
+              {timeFilterOptions?.length ? (
+                <div className="mt-3">
+                  <p className="mb-1 block text-sm font-medium text-stone-800">
+                    Filtrar por horário
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {timeFilterOptions.map((timeOption) => {
+                      const isSelected = selectedTimes.includes(timeOption);
+
+                      return (
+                        <button
+                          key={timeOption}
+                          type="button"
+                          onClick={() => {
+                            setSelectedTimes((current) =>
+                              current.includes(timeOption)
+                                ? current.filter((time) => time !== timeOption)
+                                : [...current, timeOption],
+                            );
+                            setCurrentPage(1);
+                          }}
+                          className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${
+                            isSelected
+                              ? "border-amber-600 bg-amber-100 text-amber-900"
+                              : "border-stone-300 bg-white text-stone-700 hover:border-stone-400"
+                          }`}
+                          aria-pressed={isSelected}
+                        >
+                          {timeOption}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              ) : null}
             </div>
           </header>
 
