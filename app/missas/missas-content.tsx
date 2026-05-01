@@ -27,7 +27,7 @@ export default function MissasContent() {
     <ServicePageContent
       serviceType={MASS_TYPE}
       pageTitle={`Missas em ${cityEntry.city}`}
-      sectionTitle="Missas hoje?"
+      sectionTitle={`Horários de missas em ${cityEntry.city}`}
       badgeLabel="Missa"
       badgeClassName="bg-stone-200 text-stone-800"
       emptyMessage="Nenhuma missa encontrada para esta busca."
