@@ -1689,7 +1689,7 @@
       {
         "name": "Paróquia Nossa Senhora da Guia – Distrito da Guia",
         "slug": "paroquia-nossa-senhora-da-guia-distrito-da-guia",
-        "address": "Centro Norte, Várzea Grande - MT, 78110-400",
+        "address": "R. Nossa Sra. da Guia, 239 - Guia, Cuiabá - MT",
         "phone": "65 3682 5575",
         "email": "guiavgpascom@hotmail.com",
         "website": "",
@@ -2152,13 +2152,31 @@
         "phone": "65 3682 5575",
         "email": "guiavgpascom@hotmail.com",
         "website": "",
-        "instagram": "",
+        "instagram": "https://www.instagram.com/paroquiansdaguiavg",
+        "priests": [
+          {
+            "name": "Padre Valdésio Pereira Santos",
+            "role": "Pároco"
+          },
+          {
+            "name": "Padre Maurício Dias de Araújo",
+            "role": "Vigário"
+          },
+          {
+            "name": "Padre Otoniel Wallysson Batista de Lima Pequeno",
+            "role": "Vigário"
+          },
+          {
+            "name": "Padre José de Oliveira",
+            "role": "Vigário"
+          }
+        ],
         "churches": [
           {
-            "name": "Nossa Senhora da Guia – Várzea Grande",
+            "name": "Matriz Nossa Senhora do Carmo",
             "address": "Centro Norte, Várzea Grande - MT, 78110-400",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/sojNENYtibMALKrC6"
             },
             "services": [
               {
@@ -2281,6 +2299,103 @@
                 "notes": "Até 17:00"
               }
             ]
+          },
+          {
+            "name": "Comunidade Santuário Nossa Senhora da Salette",
+            "address": "Avenida Eduardo Gomes, Estr. da Praia Grande, s/n - Costa Verde, Várzea Grande - MT, 78130-730",
+            "location": {
+              "link": "https://maps.app.goo.gl/NXBVrmkfEKG4Fi818"
+            },
+            "services": [
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Quarta-feira",
+                "time": "16:00",
+                "notes": "Até 18:30"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Terça-feira",
+                "time": "19:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Quarta-feira",
+                "time": "19:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Quinta-feira",
+                "time": "19:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Sexta-feira",
+                "time": "19:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Sábado",
+                "time": "07:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Domingo",
+                "time": "07:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Domingo",
+                "time": "18:00"
+              }
+            ]
+          },
+          {
+            "name": "Comunidade Nossa Senhora Aparecida – Praia Grande",
+            "address": "",
+            "location": {
+              "link": ""
+            },
+            "services": []
+          },
+          {
+            "name": "Comunidade São José – Novo Mato Grosso",
+            "address": "",
+            "location": {
+              "link": ""
+            },
+            "services": []
+          },
+          {
+            "name": "Comunidade Menino Jesus",
+            "address": "Avenida Porfíria Paula de Campos, 24 de Dezembro, 438-490, Várzea Grande - MT, 78134-176",
+            "location": {
+              "link": "https://maps.app.goo.gl/UcJHYmx6tmN7EBKG9"
+            },
+            "services": [
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "2º e 4º domingos do mês",
+                "time": "08:30"
+              }
+            ]
+          },
+          {
+            "name": "Comunidade Nossa Senhora Aparecida – Eliane Gomes",
+            "address": "",
+            "location": {
+              "link": ""
+            },
+            "services": []
           }
         ]
       },
@@ -2291,13 +2406,23 @@
         "phone": "65 999264-5956 / 65 3691-6220",
         "email": "pnsgracas@cuiabaarquidiocese.net",
         "website": "",
-        "instagram": "",
+        "instagram": "https://www.instagram.com/nossasenhoradasgracasvg",
+        "priests": [
+          {
+            "name": "Padre Paulo Sérgio Pedroso de Paula",
+            "role": "Pároco"
+          },
+          {
+            "name": "Padre Gabriel Maciel Vieira",
+            "role": "Vigário"
+          }
+        ],
         "churches": [
           {
-            "name": "Nossa Senhora das Graças",
+            "name": "Matriz Paroquial Nossa Senhora das Graças",
             "address": "Av. Maracanã, 401 - Jardim Maringa, Várzea Grande - MT, 78120-500",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/jJHXa7AR2esrLkUQ6"
             },
             "services": [
               {
@@ -2343,23 +2468,74 @@
                 "time": "18:00"
               }
             ]
+          },
+          {
+            "name": "São José Operário",
+            "address": "",
+            "location": {
+              "link": ""
+            },
+            "services": []
+          },
+          {
+            "name": "Santa Luzia",
+            "address": "999, R. Mario de Almeida, 949 - Santa Luzia, Várzea Grande - MT, 78120-826",
+            "location": {
+              "link": "https://maps.app.goo.gl/eRo6vLoSn43UU8776"
+            },
+            "services": []
+          },
+          {
+            "name": "Santa Clara",
+            "address": "Av. São Gonçalo - Parque do Lago, Várzea Grande - MT",
+            "location": {
+              "link": "https://maps.app.goo.gl/szQVi8W16qebsqPL9"
+            },
+            "services": []
+          },
+          {
+            "name": "Santo Antônio",
+            "address": "",
+            "location": {
+              "link": ""
+            },
+            "services": []
+          },
+          {
+            "name": "São Francisco",
+            "address": "Av. Principal, 95 - Parque São João, Várzea Grande - MT",
+            "location": {
+              "link": "https://maps.app.goo.gl/D3FFwSgrPYGFuHty7"
+            },
+            "services": []
           }
+
         ]
       },
       {
         "name": "Paróquia Nossa Senhora de Brotas",
         "slug": "paroquia-nossa-senhora-de-brotas",
-        "address": "78485-000",
+        "address": "Acorizal, MT, 78485-000",
         "phone": "(65) 3353-1280",
         "email": "",
-        "website": "",
-        "instagram": "",
+        "website": "https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5565996202127%26text%3DOl%25C3%25A1%2521%2BA%2Bpaz%2Bde%2BCristo%2521%25F0%259F%2599%258F%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0DMTAwAHNydGMGYXBwX2lkDDI1NjI4MTA0MDU1OAABpwHDkM2rIGVDDEeF959cWPklvZ8obKwSgG_iKEpr7Awd6PFL5naBPyNCws01_aem_-_80e9A1TlMGoG6BkWLJ6A&e=AT646g30tsRvpJ1tSqZQbO5O2xr81YKHBdCq1WS3R9-dSqYO3OkFQHEHv-g8R40b1j6ShhhKUP1n_9ZcND6KEAm5qVmqxq9KJ26gH_vStluIeUt7G7rqoBIe8w",
+        "instagram": "https://www.instagram.com/pnsbrotas",
+        "priests": [
+          {
+            "name": "Padre Edevando Acendino Martins",
+            "role": "Pároco"
+          },
+          {
+            "name": "Padre Marco Rodrigues Lima",
+            "role": "Vigário"
+          }
+        ],
         "churches": [
           {
             "name": "Nossa Senhora de Brotas",
-            "address": "78485-000",
+            "address": "Acorizal, MT, 78485-000",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/H4NBjWhHFzFFx3go9"
             },
             "services": [
               {
@@ -2411,17 +2587,31 @@
       {
         "name": "Paróquia Nossa Senhora de Guadalupe",
         "slug": "paroquia-nossa-senhora-de-guadalupe",
-        "address": "",
-        "phone": "",
+        "address": "R. Pres. Wenceslau Braz, 700 - Quilombo, Cuiabá - MT, 78043-508, Brasil",
+        "phone": "65999510719",
         "email": "",
-        "website": "",
-        "instagram": "",
+        "website": "https://guadalupecba.com.br",
+        "instagram": "https://www.instagram.com/paroquiaguadalupecba",
+        "priests": [
+          {
+            "name": "Frei Jorge Henrique Lisot Camargo – OFM",
+            "role": "Pároco"
+          },
+          {
+            "name": "Frei Aguinaldo Santana Pereira – OFM",
+            "role": "Vigário"
+          },
+          {
+            "name": "Frei André Luiz Nascimento dos Santos – OFM",
+            "role": "Vigário"
+          }
+        ],
         "churches": [
           {
             "name": "Nossa Senhora de Guadalupe",
-            "address": "",
+            "address": "R. Pres. Wenceslau Braz, 700 - Quilombo, Cuiabá - MT, 78043-508, Brasil",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/EkfbKyWFB2RZ4jxD9"
             },
             "services": [
               {
@@ -2471,6 +2661,114 @@
                 "type_name": "Missa",
                 "day": "Domingo",
                 "time": "18:00"
+              }
+            ]
+          },
+          {
+            "name": "Comunidade Nossa Senhora da Conceição Aparecida",
+            "address": "Res. Paiaguás, Cuiabá - MT, 78048-240",
+            "location": {
+              "link": "https://maps.app.goo.gl/KkDxrwFZu23N2rQZA"
+            },
+            "services": [
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Terça-feira",
+                "time": "19:30"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Domingo",
+                "time": "08:30"
+              }
+            ]
+          },
+          {
+            "name": "Comunidade Nossa Senhora de Fátima",
+            "address": "R. Min. João Alberto, 25 - Araes, Cuiabá - MT, 78005-580",
+            "location": {
+              "link": "https://maps.app.goo.gl/oNY1dksVzxsEwSK6A"
+            },
+            "services": [
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Quinta-feira",
+                "time": "19:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Domingo",
+                "time": "07:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Domingo",
+                "time": "18:00"
+              }
+            ]
+          },
+          {
+            "name": "Comunidade Santa Isabel da Hungria",
+            "address": "R. Paraguai, 344-410 - Ribeirão da Ponte, Cuiabá - MT, 78040-530",
+            "location": {
+              "link": "https://maps.app.goo.gl/UK3AhQJUmLivrWku5"
+            },
+            "services": [
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Sábado",
+                "time": "19:30"
+              }
+            ]
+          },
+          {
+            "name": "Capela São Francisco de Assis",
+            "address": "R. Cel. Otiles Moreira, 314 - Duque de Caxias, Cuiabá - MT, 78043-368",
+            "location": {
+              "link": "https://maps.app.goo.gl/hHSWCUqwEQ1LT34R7"
+            },
+            "services": [
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Domingo",
+                "time": "18:00"
+              }
+            ]
+          },
+          {
+            "name": "Capela São José",
+            "address": "R. dos Lírios, 228 - Res. Paiaguás, Cuiabá - MT, 78043-122",
+            "location": {
+              "link": "https://maps.app.goo.gl/m5C1yY3rSZFupZuo8"
+            },
+            "services": [
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Quarta-feira",
+                "time": "19:30"
+              }
+            ]
+          },
+          {
+            "name": "Comunidade Nossa Senhora da Penha",
+            "address": "Rua 16 de Dezembro, 156 - Despraiado, Cuiabá - MT, 78048-014",
+            "location": {
+              "link": "https://maps.app.goo.gl/4zdeiC7F2TCiJrGdA"
+            },
+            "services": [
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Domingo",
+                "time": "09:30"
               }
             ]
           }
