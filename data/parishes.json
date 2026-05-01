@@ -5660,6 +5660,175 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Oratório Arautos do Evangelho",
+        "slug": "oratorio-arautos-do-evangelho",
+        "address": "Tv. Nigéria, 50 - Santa Rosa - CEP 78040-270 – Cuiabá - MT",
+        "phone": "65996513204",
+        "email": "",
+        "website": "https://api.whatsapp.com/send/?phone=5565996513204&text&type=phone_number&app_absent=0",
+        "instagram": "https://www.instagram.com/arautoscuiaba",
+        "priests": [
+          
+        ],
+        "churches": [
+          {
+            "name": "Oratório Arautos do Evangelho",
+            "address": "Tv. Nigéria, 50 - Santa Rosa - CEP 78040-270 – Cuiabá - MT",
+            "location": {
+              "link": "https://maps.app.goo.gl/UVepaNuEz7ygidJp6"
+            },
+            "services": [
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Segunda-feira",
+                "time": "07:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Terça-feira",
+                "time": "07:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Quarta-feira",
+                "time": "07:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Quinta-feira",
+                "time": "07:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Sexta-feira",
+                "time": "07:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Segunda-feira",
+                "time": "19:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Terça-feira",
+                "time": "19:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Quarta-feira",
+                "time": "19:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Quinta-feira",
+                "time": "19:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Sexta-feira",
+                "time": "19:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Sábado",
+                "time": "17:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Domingo",
+                "time": "08:30"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Domingo",
+                "time": "10:30"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Domingo",
+                "time": "17:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Domingo",
+                "time": "19:00"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Segunda-feira",
+                "time": "18:00",
+                "notes": "Até 18:50"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Terça-feira",
+                "time": "18:00",
+                "notes": "Até 18:50"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Quarta-feira",
+                "time": "18:00",
+                "notes": "Até 18:50"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Quinta-feira",
+                "time": "18:00",
+                "notes": "Até 18:50"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Sexta-feira",
+                "time": "18:00",
+                "notes": "Até 18:50"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Sábado",
+                "time": "16:00",
+                "notes": "Até 16:50"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Domingo",
+                "time": "07:30",
+                "notes": "E entre as missas da manhã"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Domingo",
+                "time": "16:00",
+                "notes": "E entre as missas da tarde"
+              }
+            ]
+          }
+        ]
       }
     ]
   }
