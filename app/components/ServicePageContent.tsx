@@ -29,6 +29,7 @@ type ServicePageContentProps = {
   navigationHref: string;
   navigationLabel: string;
   timeFilterOptions?: string[];
+  filterByCurrentTime?: boolean;
 };
 
 export default function ServicePageContent({
@@ -41,6 +42,7 @@ export default function ServicePageContent({
   navigationHref,
   navigationLabel,
   timeFilterOptions,
+  filterByCurrentTime = true,
 }: ServicePageContentProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [showToday, setShowToday] = useState(true);
@@ -75,6 +77,7 @@ export default function ServicePageContent({
 
     if (serviceDay === todayNormalized) {
       if (!showToday) return false;
+      if (!filterByCurrentTime) return true;
       return isServiceInFuture(item.service.time, currentTime.hours, currentTime.minutes);
     }
 

@@ -34,6 +34,7 @@ export default function MissasContent() {
       navigationHref="/"
       navigationLabel="Ver confissões"
       timeFilterOptions={MASS_TIME_FILTER_OPTIONS}
+      filterByCurrentTime={false}
     />
   );
 }
