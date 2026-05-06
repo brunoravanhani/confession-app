@@ -1,10 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import {
-  getCityEntry,
-  getServicesByType,
   groupServicesByChurch,
   getTodayInPortuguese,
   getCurrentTimeInCuiaba,
@@ -13,6 +11,7 @@ import {
   normalizeDay,
   normalizeText,
   ITEMS_PER_PAGE,
+  type CityEntry,
   type ServiceItem,
 } from "@/app/lib/parishes";
 import ChurchLocationDetails from "@/app/components/ChurchLocationDetails";
@@ -42,7 +41,8 @@ function getOrderedWeekdayFilters(todayNormalized: string) {
 }
 
 type ServicePageContentProps = {
-  serviceType: number;
+  cityEntry: CityEntry;
+  allServices: ServiceItem[];
   pageTitle: string;
   sectionTitle: string;
   badgeLabel: string;
@@ -55,7 +55,8 @@ type ServicePageContentProps = {
 };
 
 export default function ServicePageContent({
-  serviceType,
+  cityEntry,
+  allServices,
   pageTitle,
   sectionTitle,
   badgeLabel,
@@ -77,66 +78,86 @@ export default function ServicePageContent({
   const [selectedTimes, setSelectedTimes] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const dioceseInfo = getCityEntry();
-  const allServices = getServicesByType(dioceseInfo, serviceType);
-
   const normalizedSearch = normalizeText(searchQuery);
   const hasDayFilter = selectedDays.length > 0;
-  const weekdayOrder = new Map(
-    orderedWeekdayFilters.map((day, index) => [day.normalized, index]),
+
+  const { hours: currentHours, minutes: currentMinutes } = getCurrentTimeInCuiaba();
+
+  const filteredServices = useMemo(
+    () => {
+      return allServices.filter((item) => {
+        if (
+          normalizedSearch &&
+          !normalizeText(item.churchName).includes(normalizedSearch) &&
+          !normalizeText(item.parishName).includes(normalizedSearch)
+        ) {
+          return false;
+        }
+
+        if (hasDayFilter) {
+          const serviceDay = normalizeDay(item.service.day);
+
+          if (!selectedDays.includes(serviceDay)) {
+            return false;
+          }
+
+          if (
+            serviceDay === todayNormalized &&
+            filterByCurrentTime &&
+            !isServiceInFuture(item.service.time, currentHours, currentMinutes)
+          ) {
+            return false;
+          }
+        }
+
+        if (timeFilterOptions?.length && selectedTimes.length > 0) {
+          return selectedTimes.includes(item.service.time);
+        }
+
+        return true;
+      });
+    },
+    [
+      allServices,
+      normalizedSearch,
+      hasDayFilter,
+      selectedDays,
+      todayNormalized,
+      filterByCurrentTime,
+      currentHours,
+      currentMinutes,
+      timeFilterOptions,
+      selectedTimes,
+    ],
   );
-
-  const currentTime = getCurrentTimeInCuiaba();
-
-  const matchesName = (item: ServiceItem): boolean => {
-    if (!normalizedSearch) return true;
-    return (
-      normalizeText(item.churchName).includes(normalizedSearch) ||
-      normalizeText(item.parishName).includes(normalizedSearch)
-    );
-  };
-
-  const matchesDayFilter = (item: ServiceItem): boolean => {
-    if (!hasDayFilter) return true;
-
-    const serviceDay = normalizeDay(item.service.day);
-
-    if (!selectedDays.includes(serviceDay)) {
-      return false;
-    }
-
-    if (serviceDay === todayNormalized) {
-      if (!filterByCurrentTime) return true;
-      return isServiceInFuture(item.service.time, currentTime.hours, currentTime.minutes);
-    }
-
-    return true;
-  };
-
-  const matchesTimeFilter = (item: ServiceItem): boolean => {
-    if (!timeFilterOptions?.length || selectedTimes.length === 0) return true;
-    return selectedTimes.includes(item.service.time);
-  };
-
-  const filteredServices = allServices.filter(
-    (item) => matchesName(item) && matchesDayFilter(item) && matchesTimeFilter(item),
-  );
-
-  const sortByDayAndTimeAsc = (a: ServiceItem, b: ServiceItem): number => {
-    const dayComparison =
-      (weekdayOrder.get(normalizeDay(a.service.day)) ?? Number.MAX_SAFE_INTEGER) -
-      (weekdayOrder.get(normalizeDay(b.service.day)) ?? Number.MAX_SAFE_INTEGER);
-    if (dayComparison !== 0) return dayComparison;
-
-    return getTimeInMinutes(a.service.time) - getTimeInMinutes(b.service.time);
-  };
 
   const shouldSort = hasDayFilter;
-  const displayedServices = shouldSort
-    ? [...filteredServices].sort(sortByDayAndTimeAsc)
-    : filteredServices;
+  const displayedServices = useMemo(
+    () => {
+      if (!shouldSort) {
+        return filteredServices;
+      }
 
-  const groupedServices = groupServicesByChurch(displayedServices);
+      const weekdayOrder = new Map(
+        orderedWeekdayFilters.map((day, index) => [day.normalized, index]),
+      );
+
+      return [...filteredServices].sort((a, b) => {
+        const dayComparison =
+          (weekdayOrder.get(normalizeDay(a.service.day)) ?? Number.MAX_SAFE_INTEGER) -
+          (weekdayOrder.get(normalizeDay(b.service.day)) ?? Number.MAX_SAFE_INTEGER);
+
+        if (dayComparison !== 0) {
+          return dayComparison;
+        }
+
+        return getTimeInMinutes(a.service.time) - getTimeInMinutes(b.service.time);
+      });
+    },
+    [filteredServices, shouldSort, orderedWeekdayFilters],
+  );
+
+  const groupedServices = useMemo(() => groupServicesByChurch(displayedServices), [displayedServices]);
   const totalPages = Math.max(1, Math.ceil(groupedServices.length / ITEMS_PER_PAGE));
   const safePage = Math.min(currentPage, totalPages);
 
@@ -164,7 +185,7 @@ export default function ServicePageContent({
               {pageTitle}
             </h1>
             <p className="mt-2 text-stone-600">
-              {dioceseInfo.diocese} · {dioceseInfo.city}/{dioceseInfo.state}
+              {cityEntry.diocese} · {cityEntry.city}/{cityEntry.state}
             </p>
 
             <nav className="mt-4 flex justify-center text-sm font-medium">

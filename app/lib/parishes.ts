@@ -1,5 +1,3 @@
-import parishesData from "@/data/parishes.json";
-
 export type Service = {
   type: number;
   type_name: string;
@@ -56,7 +54,6 @@ export type GroupedServiceItem = {
 
 export const MASS_TYPE = 1;
 export const CONFESSION_TYPE = 2;
-export const CITY_SLUG = "cuiaba";
 export const ITEMS_PER_PAGE = 8;
 
 export function normalizeDay(day: string): string {
@@ -173,9 +170,4 @@ export function getGoogleMapsLink(location?: ChurchLocation): string | null {
   }
 
   return null;
-}
-
-export function getCityEntry(): CityEntry {
-  const data = parishesData as ParishesData;
-  return data[CITY_SLUG];
 }

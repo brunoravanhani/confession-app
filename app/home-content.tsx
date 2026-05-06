@@ -1,12 +1,15 @@
 import ServicePageContent from "@/app/components/ServicePageContent";
-import { CONFESSION_TYPE, getCityEntry } from "@/app/lib/parishes";
+import { CONFESSION_TYPE } from "@/app/lib/parishes";
+import { getCityEntry, getServicesByType } from "@/app/lib/parishes-data";
 
 const cityEntry = getCityEntry();
+const confessionServices = getServicesByType(cityEntry, CONFESSION_TYPE);
 
 export default function HomeContent() {
   return (
     <ServicePageContent
-      serviceType={CONFESSION_TYPE}
+      cityEntry={cityEntry}
+      allServices={confessionServices}
       pageTitle={`Onde se confessar em ${cityEntry.city}?`}
       sectionTitle="Onde confessar hoje?"
       badgeLabel="Confissão"

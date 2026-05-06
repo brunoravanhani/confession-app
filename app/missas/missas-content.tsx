@@ -1,7 +1,9 @@
 import ServicePageContent from "@/app/components/ServicePageContent";
-import { MASS_TYPE, getCityEntry } from "@/app/lib/parishes";
+import { MASS_TYPE } from "@/app/lib/parishes";
+import { getCityEntry, getServicesByType } from "@/app/lib/parishes-data";
 
 const cityEntry = getCityEntry();
+const massServices = getServicesByType(cityEntry, MASS_TYPE);
 const MASS_TIME_FILTER_OPTIONS = [
   "06:00",
   "06:30",
@@ -25,7 +27,8 @@ const MASS_TIME_FILTER_OPTIONS = [
 export default function MissasContent() {
   return (
     <ServicePageContent
-      serviceType={MASS_TYPE}
+      cityEntry={cityEntry}
+      allServices={massServices}
       pageTitle={`Missas em ${cityEntry.city}`}
       sectionTitle={`Horários de missas em ${cityEntry.city}`}
       badgeLabel="Missa"
