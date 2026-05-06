@@ -7,7 +7,6 @@ import {
   getServicesByType,
   groupServicesByChurch,
   getTodayInPortuguese,
-  getRelativeDayInPortuguese,
   getCurrentTimeInCuiaba,
   isServiceInFuture,
   getTimeInMinutes,
@@ -18,6 +17,29 @@ import {
 } from "@/app/lib/parishes";
 import ChurchLocationDetails from "@/app/components/ChurchLocationDetails";
 import PaginationControls from "@/app/components/PaginationControls";
+
+const WEEKDAY_FILTERS = [
+  { label: "Segunda", normalized: normalizeDay("Segunda-feira") },
+  { label: "Terça", normalized: normalizeDay("Terça-feira") },
+  { label: "Quarta", normalized: normalizeDay("Quarta-feira") },
+  { label: "Quinta", normalized: normalizeDay("Quinta-feira") },
+  { label: "Sexta", normalized: normalizeDay("Sexta-feira") },
+  { label: "Sábado", normalized: normalizeDay("Sábado") },
+  { label: "Domingo", normalized: normalizeDay("Domingo") },
+];
+
+function getOrderedWeekdayFilters(todayNormalized: string) {
+  const currentDayIndex = WEEKDAY_FILTERS.findIndex((day) => day.normalized === todayNormalized);
+
+  if (currentDayIndex === -1) {
+    return WEEKDAY_FILTERS;
+  }
+
+  return [
+    ...WEEKDAY_FILTERS.slice(currentDayIndex),
+    ...WEEKDAY_FILTERS.slice(0, currentDayIndex),
+  ];
+}
 
 type ServicePageContentProps = {
   serviceType: number;
@@ -44,21 +66,25 @@ export default function ServicePageContent({
   timeFilterOptions,
   filterByCurrentTime = true,
 }: ServicePageContentProps) {
+  const today = getTodayInPortuguese();
+  const todayNormalized = normalizeDay(today);
+  const orderedWeekdayFilters = getOrderedWeekdayFilters(todayNormalized);
+
   const [searchQuery, setSearchQuery] = useState("");
-  const [showToday, setShowToday] = useState(true);
-  const [showTomorrow, setShowTomorrow] = useState(false);
+  const [selectedDays, setSelectedDays] = useState<string[]>(() =>
+    orderedWeekdayFilters.slice(0, 1).map((day) => day.normalized),
+  );
   const [selectedTimes, setSelectedTimes] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
 
   const dioceseInfo = getCityEntry();
   const allServices = getServicesByType(dioceseInfo, serviceType);
 
-  const today = getTodayInPortuguese();
-  const tomorrow = getRelativeDayInPortuguese(1);
-  const todayNormalized = normalizeDay(today);
-  const tomorrowNormalized = normalizeDay(tomorrow);
   const normalizedSearch = normalizeText(searchQuery);
-  const hasDayFilter = showToday || showTomorrow;
+  const hasDayFilter = selectedDays.length > 0;
+  const weekdayOrder = new Map(
+    orderedWeekdayFilters.map((day, index) => [day.normalized, index]),
+  );
 
   const currentTime = getCurrentTimeInCuiaba();
 
@@ -75,17 +101,16 @@ export default function ServicePageContent({
 
     const serviceDay = normalizeDay(item.service.day);
 
+    if (!selectedDays.includes(serviceDay)) {
+      return false;
+    }
+
     if (serviceDay === todayNormalized) {
-      if (!showToday) return false;
       if (!filterByCurrentTime) return true;
       return isServiceInFuture(item.service.time, currentTime.hours, currentTime.minutes);
     }
 
-    if (serviceDay === tomorrowNormalized) {
-      return showTomorrow;
-    }
-
-    return false;
+    return true;
   };
 
   const matchesTimeFilter = (item: ServiceItem): boolean => {
@@ -98,14 +123,9 @@ export default function ServicePageContent({
   );
 
   const sortByDayAndTimeAsc = (a: ServiceItem, b: ServiceItem): number => {
-    const dayOrder = (day: string): number => {
-      if (day === todayNormalized) return 0;
-      if (day === tomorrowNormalized) return 1;
-      return 2;
-    };
-
     const dayComparison =
-      dayOrder(normalizeDay(a.service.day)) - dayOrder(normalizeDay(b.service.day));
+      (weekdayOrder.get(normalizeDay(a.service.day)) ?? Number.MAX_SAFE_INTEGER) -
+      (weekdayOrder.get(normalizeDay(b.service.day)) ?? Number.MAX_SAFE_INTEGER);
     if (dayComparison !== 0) return dayComparison;
 
     return getTimeInMinutes(a.service.time) - getTimeInMinutes(b.service.time);
@@ -129,14 +149,11 @@ export default function ServicePageContent({
     safePage * ITEMS_PER_PAGE,
   );
 
-  const dayFilterLabel =
-    showToday && showTomorrow
-      ? "hoje e amanhã"
-      : showToday
-        ? "hoje"
-        : showTomorrow
-          ? "amanhã"
-          : null;
+  const selectedDayLabels = orderedWeekdayFilters
+    .filter((day) => selectedDays.includes(day.normalized))
+    .map((day) => day.label);
+
+  const dayFilterLabel = selectedDayLabels.length > 0 ? selectedDayLabels.join(", ") : null;
 
   return (
     <div className="min-h-full flex-1 bg-white px-4 py-10">
@@ -176,34 +193,32 @@ export default function ServicePageContent({
               />
 
               <div className="mt-3 flex flex-wrap gap-2">
-                <button
-                  type="button"
-                  onClick={() => {
-                    setShowToday((current) => !current);
-                    setCurrentPage(1);
-                  }}
-                  className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${
-                    showToday
-                      ? "border-amber-600 bg-amber-100 text-amber-900"
-                      : "border-stone-300 bg-white text-stone-700 hover:border-stone-400"
-                  }`}
-                >
-                  Hoje
-                </button>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setShowTomorrow((current) => !current);
-                    setCurrentPage(1);
-                  }}
-                  className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${
-                    showTomorrow
-                      ? "border-amber-600 bg-amber-100 text-amber-900"
-                      : "border-stone-300 bg-white text-stone-700 hover:border-stone-400"
-                  }`}
-                >
-                  Amanhã
-                </button>
+                {orderedWeekdayFilters.map((day) => {
+                  const isSelected = selectedDays.includes(day.normalized);
+
+                  return (
+                    <button
+                      key={day.normalized}
+                      type="button"
+                      onClick={() => {
+                        setSelectedDays((current) =>
+                          current.includes(day.normalized)
+                            ? current.filter((selectedDay) => selectedDay !== day.normalized)
+                            : [...current, day.normalized],
+                        );
+                        setCurrentPage(1);
+                      }}
+                      className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${
+                        isSelected
+                          ? "border-amber-600 bg-amber-100 text-amber-900"
+                          : "border-stone-300 bg-white text-stone-700 hover:border-stone-400"
+                      }`}
+                      aria-pressed={isSelected}
+                    >
+                      {day.label}
+                    </button>
+                  );
+                })}
               </div>
 
               {timeFilterOptions?.length ? (
