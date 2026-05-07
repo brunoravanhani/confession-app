@@ -2777,17 +2777,23 @@
       {
         "name": "Paróquia Nossa Senhora do Pantanal",
         "slug": "paroquia-nossa-senhora-do-pantanal",
-        "address": "",
-        "phone": "",
+        "address": "R. Maj. João Alves Vieira, s/n - Petrópolis, Várzea Grande - MT, 78144-464",
+        "phone": "65993315504",
         "email": "",
-        "website": "",
-        "instagram": "",
+        "website": "https://api.whatsapp.com/send/?phone=65993315504&text&type=phone_number",
+        "instagram": "https://www.instagram.com/paroquiapantanal",
+        "priests": [
+          {
+            "name": "Frei Dimas Solda – FMM",
+            "role": "Pároco"
+          }
+        ],
         "churches": [
           {
             "name": "Nossa Senhora do Pantanal",
-            "address": "",
+            "address": "R. Maj. João Alves Vieira, s/n - Petrópolis, Várzea Grande - MT, 78144-464",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/rUQtLppqq6KzPJW5A"
             },
             "services": [
               {
@@ -2820,6 +2826,62 @@
                 "type_name": "Missa",
                 "day": "Domingo",
                 "time": "19:00"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Terça-feira",
+                "time": "07:30",
+                "notes": "Até 11:30"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Quarta-feira",
+                "time": "07:30",
+                "notes": "Até 11:30"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Quinta-feira",
+                "time": "07:30",
+                "notes": "Até 11:30"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Sexta-feira",
+                "time": "07:30",
+                "notes": "Até 11:30"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Terça-feira",
+                "time": "13:30",
+                "notes": "Até 17:30"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Quarta-feira",
+                "time": "13:30",
+                "notes": "Até 17:30"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Quinta-feira",
+                "time": "13:30",
+                "notes": "Até 17:30"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Sexta-feira",
+                "time": "13:30",
+                "notes": "Até 17:30"
               }
             ]
           }
