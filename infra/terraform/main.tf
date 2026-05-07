@@ -107,12 +107,304 @@ resource "aws_cloudfront_distribution" "site" {
     origin_access_control_id = aws_cloudfront_origin_access_control.site.id
   }
 
+  # Cache behavior for versioned assets (JS, CSS, fonts) - long cache with immutable flag
+  cache_behavior {
+    path_pattern           = "*.js"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  cache_behavior {
+    path_pattern           = "*.css"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  cache_behavior {
+    path_pattern           = "*.woff*"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  cache_behavior {
+    path_pattern           = "*.ttf"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  cache_behavior {
+    path_pattern           = "*.otf"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  # Cache behavior for images - long cache
+  cache_behavior {
+    path_pattern           = "*.jpg"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  cache_behavior {
+    path_pattern           = "*.jpeg"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  cache_behavior {
+    path_pattern           = "*.png"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  cache_behavior {
+    path_pattern           = "*.gif"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  cache_behavior {
+    path_pattern           = "*.webp"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  cache_behavior {
+    path_pattern           = "*.svg"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  cache_behavior {
+    path_pattern           = "*.ico"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  # Cache behavior for crawl files - medium cache
+  cache_behavior {
+    path_pattern           = "/robots.txt"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  cache_behavior {
+    path_pattern           = "/sitemap.xml"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  cache_behavior {
+    path_pattern           = "/ads.txt"
+    target_origin_id       = "site-origin"
+    viewer_protocol_policy = "redirect-to-https"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD"]
+    compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
+    
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  # Default cache behavior for HTML pages - short cache with revalidation
   default_cache_behavior {
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
     allowed_methods        = ["GET", "HEAD", "OPTIONS"]
     cached_methods         = ["GET", "HEAD"]
     compress               = true
+    min_ttl                = 0
+    default_ttl            = 604800  # 1 week
+    max_ttl                = 604800
 
     forwarded_values {
       query_string = false
@@ -158,6 +450,15 @@ resource "aws_cloudfront_distribution" "site" {
   }
 
   tags = local.common_tags
+}
+
+# Invalidate CloudFront cache on every deploy to ensure HTML updates are served immediately
+resource "aws_cloudfront_invalidation" "site" {
+  distribution_id = aws_cloudfront_distribution.site.id
+  paths           = ["/", "/index.html", "/*.html", "/robots.txt", "/sitemap.xml", "/ads.txt"]
+
+  # Terraform will automatically trigger invalidation when distribution changes
+  depends_on = [aws_cloudfront_distribution.site]
 }
 
 resource "aws_route53_record" "site_a" {
