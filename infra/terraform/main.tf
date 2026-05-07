@@ -452,15 +452,6 @@ resource "aws_cloudfront_distribution" "site" {
   tags = local.common_tags
 }
 
-# Invalidate CloudFront cache on every deploy to ensure HTML updates are served immediately
-resource "aws_cloudfront_invalidation" "site" {
-  distribution_id = aws_cloudfront_distribution.site.id
-  paths           = ["/", "/index.html", "/*.html", "/robots.txt", "/sitemap.xml", "/ads.txt"]
-
-  # Terraform will automatically trigger invalidation when distribution changes
-  depends_on = [aws_cloudfront_distribution.site]
-}
-
 resource "aws_route53_record" "site_a" {
   count = var.create_route53_record ? 1 : 0
 
