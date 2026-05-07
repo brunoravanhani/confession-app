@@ -3397,14 +3397,24 @@
         "address": "Marechal Floriano Peixoto, 611 Quilombo, CEP 78045-310, Cuiabá-MT",
         "phone": "(65) 3057-3708 / (65) 9 9997-2529",
         "email": "pnsmaedoshomens@cuiabaarquidiocese.net",
-        "website": "",
-        "instagram": "",
+        "website": "https://maedoshomens.cuiaba.br/",
+        "instagram": "https://www.instagram.com/maedoshomenscuiaba",
+        "priests": [
+          {
+            "name": "Padre Edimilto dos Santos Mota",
+            "role": "Pároco"
+          },
+          {
+            "name": "Padre Tony Aparecido Moreira",
+            "role": "Vigário"
+          }
+        ],
         "churches": [
           {
             "name": "Nossa Senhora Mãe dos Homens",
             "address": "Marechal Floriano Peixoto, 611 Quilombo, CEP 78045-310, Cuiabá-MT",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/B8fkkMycbxCTLJo5A"
             },
             "services": [
               {
@@ -3490,6 +3500,57 @@
                 "type_name": "Missa",
                 "day": "Domingo",
                 "time": "19:00"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Sexta-feira",
+                "time": "09:00",
+                "notes": "Até 11:00"
+              },
+              {
+                "type": 2,
+                "type_name": "Confissão",
+                "day": "Sexta-feira",
+                "time": "15:00",
+                "notes": "Até 17:00"
+              }
+            ]
+          },
+          {
+            "name": "Igreja Nossa Senhora da Boa Morte e da Glória",
+            "address": "Praça Antônio Correa, s/n - Centro, Cuiabá - MT, 78045-310",
+            "location": {
+              "link": "https://maps.app.goo.gl/kw43sQySmNcTMaws6"
+            },
+            "services": [
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Quarta-feira",
+                "time": "19:30"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Sábado",
+                "time": "07:00"
+              }
+              
+            ]
+          },
+          {
+            "name": "Capela Nossa Senhora do Carmo",
+            "address": "Av. São Sebastião, 1825 - Goiabeiras, Cuiabá - MT, 78020-540",
+            "location": {
+              "link": "https://maps.app.goo.gl/mqGcrgyyVHbbsosx9"
+            },
+            "services": [
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Domingo",
+                "time": "07:00"
               }
             ]
           }
