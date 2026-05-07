@@ -116,9 +116,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -135,9 +135,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -154,9 +154,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -173,9 +173,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -192,9 +192,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -212,9 +212,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -231,9 +231,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -250,9 +250,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -269,9 +269,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -288,9 +288,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -307,9 +307,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -326,9 +326,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -346,9 +346,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -365,9 +365,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -384,9 +384,9 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
-    
+
     forwarded_values {
       query_string = false
       cookies {
@@ -403,7 +403,7 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods         = ["GET", "HEAD"]
     compress               = true
     min_ttl                = 0
-    default_ttl            = 604800  # 1 week
+    default_ttl            = 604800 # 1 week
     max_ttl                = 604800
 
     forwarded_values {
