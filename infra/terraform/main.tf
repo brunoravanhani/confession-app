@@ -108,7 +108,7 @@ resource "aws_cloudfront_distribution" "site" {
   }
 
   # Cache behavior for versioned assets (JS, CSS, fonts) - long cache with immutable flag
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "*.js"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -127,7 +127,7 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "*.css"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -146,7 +146,7 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "*.woff*"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -165,7 +165,7 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "*.ttf"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -184,7 +184,7 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "*.otf"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -204,7 +204,7 @@ resource "aws_cloudfront_distribution" "site" {
   }
 
   # Cache behavior for images - long cache
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "*.jpg"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -223,7 +223,7 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "*.jpeg"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -242,7 +242,7 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "*.png"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -261,7 +261,7 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "*.gif"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -280,7 +280,7 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "*.webp"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -299,7 +299,7 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "*.svg"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -318,7 +318,7 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "*.ico"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -338,7 +338,7 @@ resource "aws_cloudfront_distribution" "site" {
   }
 
   # Cache behavior for crawl files - medium cache
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "/robots.txt"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -357,7 +357,7 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "/sitemap.xml"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
@@ -376,7 +376,7 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern           = "/ads.txt"
     target_origin_id       = "site-origin"
     viewer_protocol_policy = "redirect-to-https"
