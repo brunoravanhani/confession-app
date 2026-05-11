@@ -3578,13 +3578,15 @@
         "phone": "65 - 3625 2585",
         "email": "pnsmedianeira@cuiabaarquidiocese.net",
         "website": "",
-        "instagram": "",
+        "instagram": "https://www.instagram.com/medianeiracba",
         "churches": [
           {
             "name": "Nossa Senhora Medianeira de Todas as Graças",
             "address": "Av. Taubaté, 434-482 - Novo Terceiro, Cuiabá - MT, 78028-310",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/RN85h7QaXyzYqej29",
+              "lat": -15.6123306,
+              "lng": -56.1347713
             },
             "head": true,
             "services": [
@@ -3640,7 +3642,7 @@
                 "type": 1,
                 "type_name": "Missa",
                 "day": "Domingo",
-                "time": "07:00"
+                "time": "07:30"
               },
               {
                 "type": 1,
