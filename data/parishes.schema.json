@@ -102,6 +102,9 @@
         "location": {
           "$ref": "#/$defs/location"
         },
+          "head": {
+            "type": "boolean"
+          },
         "services": {
           "type": "array",
           "items": {

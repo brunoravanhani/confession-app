@@ -34,6 +34,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/PrNdp8JsNj88Z3Rk7"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -281,6 +282,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/iXVo1kxitSJZFYgB8"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -433,12 +435,12 @@
             ]
           },
           {
-             "name": "Comunidade São Judas Tadeu",
-             "address": "Av. Cel Escolástico, Número 810 Bairro: Bandeirantes.",
-             "location": {
-               "link": "https://maps.app.goo.gl/uEwhMb7TvyuDE1S16"
-             },
-             "services": [
+            "name": "Comunidade São Judas Tadeu",
+            "address": "Av. Cel Escolástico, Número 810 Bairro: Bandeirantes.",
+            "location": {
+              "link": "https://maps.app.goo.gl/uEwhMb7TvyuDE1S16"
+            },
+            "services": [
               {
                 "type": 1,
                 "type_name": "Missa",
@@ -486,6 +488,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -610,6 +613,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/ZVqRQmB5VCuAfySq6"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -875,6 +879,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/tGyD55KnBsSrohVL9"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -978,6 +983,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/DG8UQ7FkL1VwWkvL6"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -1300,7 +1306,7 @@
               "link": "https://maps.app.goo.gl/oHHFBBqSe8RhY4WZA"
             },
             "services": [
-               {
+              {
                 "type": 1,
                 "type_name": "Missa",
                 "day": "Sábado",
@@ -1398,6 +1404,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/4cnjnwHZeJNPw7uP9"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -1498,6 +1505,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/FcDG2Rop25Wx5U8S7"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -1715,6 +1723,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/mj5UtZpi1GL92sEy6"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -2178,6 +2187,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/sojNENYtibMALKrC6"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -2424,6 +2434,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/jJHXa7AR2esrLkUQ6"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -2509,7 +2520,6 @@
             },
             "services": []
           }
-
         ]
       },
       {
@@ -2537,6 +2547,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/H4NBjWhHFzFFx3go9"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -2613,6 +2624,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/EkfbKyWFB2RZ4jxD9"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -2795,6 +2807,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/rUQtLppqq6KzPJW5A"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -2902,6 +2915,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -3308,6 +3322,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -3416,6 +3431,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/B8fkkMycbxCTLJo5A"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -3536,7 +3552,6 @@
                 "day": "Sábado",
                 "time": "07:00"
               }
-              
             ]
           },
           {
@@ -3571,6 +3586,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -3715,6 +3731,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -3823,6 +3840,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -4114,6 +4132,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -4176,6 +4195,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -4244,6 +4264,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -4424,6 +4445,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -4506,6 +4528,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -4538,6 +4561,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -4626,6 +4650,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -4792,6 +4817,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -4955,6 +4981,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -5131,6 +5158,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -5269,6 +5297,7 @@
             "location": {
               "link": ""
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -5722,6 +5751,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/Y4PsdTNWKiQ7rDkk7"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
@@ -5792,9 +5822,7 @@
         "email": "",
         "website": "https://api.whatsapp.com/send/?phone=5565996513204&text&type=phone_number&app_absent=0",
         "instagram": "https://www.instagram.com/arautoscuiaba",
-        "priests": [
-          
-        ],
+        "priests": [],
         "churches": [
           {
             "name": "Oratório Arautos do Evangelho",
@@ -5802,6 +5830,7 @@
             "location": {
               "link": "https://maps.app.goo.gl/UVepaNuEz7ygidJp6"
             },
+            "head": true,
             "services": [
               {
                 "type": 1,
