@@ -23,6 +23,7 @@ export type Church = {
 export type Parish = {
   name: string;
   slug: string;
+  highlight?: boolean;
   churches: Church[];
 };
 

@@ -61,6 +61,9 @@
         "instagram": {
           "type": "string"
         },
+        "highlight": {
+          "$ref": "#/$defs/highlight"
+        },
         "priests": {
           "type": "array",
           "items": {
@@ -76,6 +79,9 @@
       },
       "required": ["name", "slug", "address", "phone", "email", "website", "instagram", "churches"],
       "additionalProperties": false
+    },
+    "highlight": {
+      "type": "boolean"
     },
     "priest": {
       "type": "object",
@@ -102,9 +108,9 @@
         "location": {
           "$ref": "#/$defs/location"
         },
-          "head": {
-            "type": "boolean"
-          },
+        "head": {
+          "type": "boolean"
+        },
         "services": {
           "type": "array",
           "items": {

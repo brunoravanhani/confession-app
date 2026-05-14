@@ -1,11 +1,29 @@
 import type { Metadata } from "next";
-import HomeContent from "./home-content";
-import { getCityEntry, getHighlightedParishes } from "@/app/lib/parishes-data";
-import { CONFESSION_TYPE } from "@/app/lib/parishes";
-import type { CityEntry, Parish } from "@/app/lib/parishes";
+import ConfissoesContent from "./confissoes-content";
+import parishesData from "@/data/parishes.json";
 
-const cityEntry = getCityEntry();
-const highlightedParishes = getHighlightedParishes(cityEntry);
+type Service = {
+  type: number;
+};
+
+type Church = {
+  name: string;
+  address?: string;
+  services: Service[];
+};
+
+type Parish = {
+  name: string;
+  churches: Church[];
+};
+
+type CityEntry = {
+  city: string;
+  state: string;
+  parishes: Parish[];
+};
+
+type ParishesData = Record<string, CityEntry>;
 
 type ListItem = {
   "@type": "ListItem";
@@ -14,18 +32,24 @@ type ListItem = {
   address?: string;
 };
 
+const CITY_SLUG = "cuiaba";
+const CONFESSION_TYPE = 2;
+
+const data = parishesData as ParishesData;
+const cityEntry = data[CITY_SLUG];
+
 export const metadata: Metadata = {
   title: `Onde se confessar em ${cityEntry.city}`,
   description:
     "Encontre horários atualizados de confissão e missa em Cuiabá, com busca por igreja e filtros por dia.",
   alternates: {
-    canonical: "/",
+    canonical: "/confissoes",
   },
   openGraph: {
     title: `Onde se confessar em ${cityEntry.city}`,
     description:
       "Consulte horários de confissão e missa em Cuiabá por igreja, paróquia e dia da semana.",
-    url: "/",
+    url: "/confissoes",
     locale: "pt_BR",
     type: "website",
   },
@@ -36,11 +60,8 @@ export const metadata: Metadata = {
   },
 };
 
-function buildStructuredData(
-  entry: CityEntry,
-  parishes: Parish[],
-): { "@context": "https://schema.org"; "@graph": unknown[] } {
-  const confessionPlaces: ListItem[] = parishes
+function buildStructuredData(entry: CityEntry): { "@context": "https://schema.org"; "@graph": unknown[] } {
+  const confessionPlaces: ListItem[] = entry.parishes
     .flatMap((parish) =>
       parish.churches
         .filter((church) => church.services.some((service) => service.type === CONFESSION_TYPE))
@@ -64,7 +85,7 @@ function buildStructuredData(
         "@type": "WebSite",
         name: "Confissão em Cuiabá",
         inLanguage: "pt-BR",
-        url: "/",
+        url: "/confissoes",
       },
       {
         "@type": "CollectionPage",
@@ -81,8 +102,8 @@ function buildStructuredData(
   };
 }
 
-export default function Home() {
-  const structuredData = buildStructuredData(cityEntry, highlightedParishes);
+export default function ConfissoesPage() {
+  const structuredData = buildStructuredData(cityEntry);
 
   return (
     <>
@@ -90,8 +111,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <HomeContent />
+      <ConfissoesContent />
     </>
   );
 }
-

@@ -13,6 +13,7 @@
         "email": "paroquiasaojoseoperariocuiaba@gmail.com",
         "website": "https://paroquiansp.com.br/",
         "instagram": "https://www.instagram.com/paroquiansp/",
+        "highlight": true,
         "priests": [
           {
             "name": "Padre Natalino Ueda",
@@ -261,6 +262,7 @@
         "email": "catedralbasilica@cuiabaarquidiocese.net",
         "website": "",
         "instagram": "https://www.instagram.com/catedraldecuiaba",
+        "highlight": true,
         "priests": [
           {
             "name": "Padre Deusdedit Monge de Almeida",
@@ -592,6 +594,7 @@
         "email": "pcristorei@cuiabaarquidiocese.net",
         "website": "https://api.whatsapp.com/send/?phone=5565999910784&text&type=phone_number",
         "instagram": "https://www.instagram.com/paroquiacristoreivg",
+        "highlight": true,
         "priests": [
           {
             "name": "Padre Overland Moraes da Costa",
@@ -5437,6 +5440,7 @@
         "email": "paseba@cuiabaarquidiosece.net",
         "website": "",
         "instagram": "",
+        "highlight": true,
         "priests": [
           {
             "name": "Padre Helder Zolet Adversi",
@@ -5987,6 +5991,7 @@
         "email": "",
         "website": "https://api.whatsapp.com/send/?phone=5565996513204&text&type=phone_number&app_absent=0",
         "instagram": "https://www.instagram.com/arautoscuiaba",
+        "highlight": true,
         "priests": [],
         "churches": [
           {
