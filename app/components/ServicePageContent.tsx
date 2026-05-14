@@ -52,6 +52,7 @@ type ServicePageContentProps = {
   navigationLabel: string;
   timeFilterOptions?: string[];
   filterByCurrentTime?: boolean;
+  showHeadFilter?: boolean;
 };
 
 export default function ServicePageContent({
@@ -66,6 +67,7 @@ export default function ServicePageContent({
   navigationLabel,
   timeFilterOptions,
   filterByCurrentTime = true,
+  showHeadFilter = false,
 }: ServicePageContentProps) {
   const today = getTodayInPortuguese();
   const todayNormalized = normalizeDay(today);
@@ -76,6 +78,7 @@ export default function ServicePageContent({
     orderedWeekdayFilters.slice(0, 1).map((day) => day.normalized),
   );
   const [selectedTimes, setSelectedTimes] = useState<string[]>([]);
+  const [selectedHeadFilter, setSelectedHeadFilter] = useState<"all" | "head" | "community">("all");
   const [currentPage, setCurrentPage] = useState(1);
 
   const normalizedSearch = normalizeText(searchQuery);
@@ -89,7 +92,8 @@ export default function ServicePageContent({
         if (
           normalizedSearch &&
           !normalizeText(item.churchName).includes(normalizedSearch) &&
-          !normalizeText(item.parishName).includes(normalizedSearch)
+          !normalizeText(item.parishName).includes(normalizedSearch) &&
+          !normalizeText(item.churchAddress).includes(normalizedSearch)
         ) {
           return false;
         }
@@ -111,7 +115,13 @@ export default function ServicePageContent({
         }
 
         if (timeFilterOptions?.length && selectedTimes.length > 0) {
-          return selectedTimes.includes(item.service.time);
+          if (!selectedTimes.includes(item.service.time)) return false;
+        }
+
+        if (showHeadFilter && selectedHeadFilter !== "all") {
+          const isHead = item.churchHead === true;
+          if (selectedHeadFilter === "head" && !isHead) return false;
+          if (selectedHeadFilter === "community" && isHead) return false;
         }
 
         return true;
@@ -128,6 +138,8 @@ export default function ServicePageContent({
       currentMinutes,
       timeFilterOptions,
       selectedTimes,
+      showHeadFilter,
+      selectedHeadFilter,
     ],
   );
 
@@ -241,6 +253,40 @@ export default function ServicePageContent({
                   );
                 })}
               </div>
+
+              {showHeadFilter ? (
+                <div className="mt-3">
+                  <p className="mb-1 block text-sm font-medium text-stone-800">
+                    Filtrar por tipo
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {(["all", "head", "community"] as const).map((option) => {
+                      const label =
+                        option === "all" ? "Todos" : option === "head" ? "Paróquia" : "Comunidade";
+                      const isSelected = selectedHeadFilter === option;
+
+                      return (
+                        <button
+                          key={option}
+                          type="button"
+                          onClick={() => {
+                            setSelectedHeadFilter(option);
+                            setCurrentPage(1);
+                          }}
+                          className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${
+                            isSelected
+                              ? "border-amber-600 bg-amber-100 text-amber-900"
+                              : "border-stone-300 bg-white text-stone-700 hover:border-stone-400"
+                          }`}
+                          aria-pressed={isSelected}
+                        >
+                          {label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              ) : null}
 
               {timeFilterOptions?.length ? (
                 <div className="mt-3">

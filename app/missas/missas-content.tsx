@@ -38,6 +38,7 @@ export default function MissasContent() {
       navigationLabel="Ver confissões"
       timeFilterOptions={MASS_TIME_FILTER_OPTIONS}
       filterByCurrentTime={false}
+      showHeadFilter
     />
   );
 }

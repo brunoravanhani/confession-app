@@ -22,6 +22,7 @@ export function getServicesByType(cityEntry: CityEntry, serviceType: number): Se
           churchName: church.name,
           churchAddress: church.address,
           churchLocation: church.location,
+          churchHead: church.head,
           service,
         }))
     ),

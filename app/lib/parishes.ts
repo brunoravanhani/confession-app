@@ -41,6 +41,7 @@ export type ServiceItem = {
   churchName: string;
   churchAddress: string;
   churchLocation?: ChurchLocation;
+  churchHead?: boolean;
   service: Service;
 };
 
@@ -50,6 +51,7 @@ export type GroupedServiceItem = {
   churchName: string;
   churchAddress: string;
   churchLocation?: ChurchLocation;
+  churchHead?: boolean;
   services: Service[];
 };
 
@@ -137,6 +139,7 @@ export function groupServicesByChurch(items: ServiceItem[]): GroupedServiceItem[
       churchName: item.churchName,
       churchAddress: item.churchAddress,
       churchLocation: item.churchLocation,
+      churchHead: item.churchHead,
       services: [item.service],
     });
   });
@@ -146,9 +149,7 @@ export function groupServicesByChurch(items: ServiceItem[]): GroupedServiceItem[
 
 export function getServicesByType(cityEntry: CityEntry, serviceType: number): ServiceItem[] {
   return cityEntry.parishes.flatMap((parish) =>
-    [...parish.churches]
-      .sort((a, b) => (b.head ? 1 : 0) - (a.head ? 1 : 0))
-      .flatMap((church) =>
+    parish.churches.flatMap((church) =>
       church.services
         .filter((service) => service.type === serviceType)
         .map((service) => ({
@@ -157,6 +158,7 @@ export function getServicesByType(cityEntry: CityEntry, serviceType: number): Se
           churchName: church.name,
           churchAddress: church.address,
           churchLocation: church.location,
+          churchHead: church.head,
           service,
         }))
     ),
