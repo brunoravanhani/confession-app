@@ -3400,7 +3400,9 @@
             "name": "Comunidade São João Batista",
             "address": "Bairro São João dos lazaros, Cuiabá - MT, 78008-450",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/qAEfvgUqLwtZNLwR9",
+              "lat": -15.5445897,
+              "lng": -56.2182769
             },
             "services": [
               {
@@ -3415,7 +3417,9 @@
             "name": "Comunidade Cristo Redentor",
             "address": "Bairro Jardim Guanabara, Cuiabá - MT",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/QaucDM6cFgR3mNFv9",
+              "lat": -15.5445897,
+              "lng": -56.2182769
             },
             "services": [
               {
@@ -3430,7 +3434,9 @@
             "name": "Nossa Senhora Auxiliadora e Sagrada Família",
             "address": "Bairro Areão",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/gnE64LsGU5hG3n798",
+              "lat": -15.5980148,
+              "lng": -56.0819523
             },
             "services": [
               {
@@ -3443,9 +3449,11 @@
           },
           {
             "name": "Comunidade Santa Edwiges",
-            "address": "Bairro Bosque da Saúde, Cuiabá - MT",
+            "address": "Rua de acesso Rua Padre José de Moura e, R. Lídio Modesto da Silva, 13 - Bosque da Saude, Cuiabá - MT, 78010-325",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/Cqq5WFo6NfggvxHM7",
+              "lat": -15.5856138,
+              "lng": -56.0788474
             },
             "services": [
               {
@@ -3466,7 +3474,9 @@
             "name": "Comunidade Sant'Ana",
             "address": "Bairro Canjica, Cuiabá - MT",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/kX7PweDAMeqwphASA",
+              "lat": -15.5836147,
+              "lng": -56.0775676
             },
             "services": [
               {
@@ -3481,7 +3491,9 @@
             "name": "Comunidade Nossa Senhora Aparecida",
             "address": "Bairro Antônio Dias, Cuiabá",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/5oKNrLcSyWaNuogU7",
+              "lat": -15.573125,
+              "lng": -56.1126309
             },
             "services": [
               {
@@ -3496,7 +3508,9 @@
             "name": "Comunidade São Pedro",
             "address": "Bairro Alvorada",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/5yPaABAuk8qcq9Wi6",
+              "lat": -15.5797619,
+              "lng": -56.0848457
             },
             "services": [
               {
@@ -3511,7 +3525,9 @@
             "name": "Comunidade São Francisco de Assis",
             "address": "Bairro Bela Vista",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/Xn2yS3JCYTNnRghR7",
+              "lat": -15.5824704,
+              "lng": -56.0681669
             },
             "services": [
               {
