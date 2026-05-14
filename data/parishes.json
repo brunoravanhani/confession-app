@@ -3859,13 +3859,15 @@
         "phone": "(65) 3653-3488",
         "email": "psagradafamilia@cuiabaarquidiocese.net",
         "website": "",
-        "instagram": "",
+        "instagram": "https://www.instagram.com/psagradafamiliacba",
         "churches": [
           {
-            "name": "Sagrada Família",
+            "name": "Matriz Paroquial Santa Luzia",
             "address": "Rua Italia Malpice de Barros, 85 - Carumbé, Cuiabá - MT, 78008-800",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/v8eAH9J17ruDK3pG6",
+              "lat": -15.5904419,
+              "lng": -56.0630573
             },
             "head": true,
             "services": [
@@ -3957,6 +3959,33 @@
                 "time": "14:00",
                 "notes": "Até 17:00 - com agendamento"
               }
+            ]
+          },
+          {
+            "name": "Comunidade Santo Antônio",
+            "address": "Rua Manaíra, s/n – Bairro Pedregal",
+            "location": {
+              "link": ""
+            },
+            "services": [
+            ]
+          },
+          {
+            "name": "Comunidade Sagrado Coração de Jesus",
+            "address": "R. Dois, 1-77 - Bela Vista, Cuiabá - MT, 78050-532",
+            "location": {
+              "link": ""
+            },
+            "services": [
+            ]
+          },
+          {
+            "name": "Comunidade Nossa Senhora das Graças",
+            "address": "1394, Av. Gonçalo Antunes de Barros, 1300 - Bosque da Saude II, Cuiabá - MT",
+            "location": {
+              "link": ""
+            },
+            "services": [
             ]
           }
         ]
