@@ -4000,13 +4000,25 @@
         "phone": "65 3695-4561",
         "email": "psedwiges@gmail.com",
         "website": "",
-        "instagram": "",
+        "instagram": "https://www.instagram.com/paroquiasantaedwigesvg",
+        "priests": [
+          {
+            "name": "Padre Divair Bento Vieira – CSS",
+            "role": "Pároco"
+          },
+          {
+            "name": "Padre Willian da Silva Oliveira – CSS",
+            "role": "Vigário"
+          }
+        ],
         "churches": [
           {
             "name": "Santa Edwiges",
             "address": "R. Bolívia, s/n - Mapim, Várzea Grande - MT, 78143-322",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/g2FgnqQAE4fAGnyZ9",
+              "lat": -15.6227602,
+              "lng": -56.1721373
             },
             "head": true,
             "services": [
@@ -4096,7 +4108,9 @@
             "name": "Comunidade Nossa Senhora Aparecida",
             "address": "",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/JxdeWyeHLfhs8hGm9",
+              "lat": -15.6321698,
+              "lng": -56.2338258
             },
             "services": [
               {
@@ -4116,14 +4130,34 @@
                 "type_name": "Missa",
                 "day": "Sexta-feira",
                 "time": "19:30"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Terça-feira",
+                "time": "06:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Quarta-feira",
+                "time": "06:00"
+              },
+              {
+                "type": 1,
+                "type_name": "Missa",
+                "day": "Quinta-feira",
+                "time": "06:00"
               }
             ]
           },
           {
             "name": "Comunidade Santo Antônio",
-            "address": "",
+            "address": "R. Nações Unidas, QD.16 - S/N - Jardim dos Estados, Várzea Grande - MT, 78158-100",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/VZ95i7h9X2CATxbU7",
+              "lat": -15.6400433,
+              "lng": -56.1941515
             },
             "services": [
               {
@@ -4143,9 +4177,11 @@
           },
           {
             "name": "Comunidade Sagrado Coração de Jesus",
-            "address": "",
+            "address": "R. Nortelândia (Jd de Ala), 25 - Mapim, Várzea Grande - MT, 78158-720",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/8q8Upi8BnZwBbiE67",
+              "lat": -15.6276037,
+              "lng": -56.1895729
             },
             "services": [
               {
@@ -4153,15 +4189,17 @@
                 "type_name": "Missa",
                 "day": "Domingo",
                 "time": "08:00",
-                "notes": "1° e 3° domingo do mês"
+                "notes": "1°, 2° e 3° domingo do mês"
               }
             ]
           },
           {
             "name": "Comunidade São Paulo Apóstolo",
-            "address": "",
+            "address": "R. Cmte. Henrique, 713 - Mapim, Várzea Grande - MT, 78155-290",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/quMty6t4X9wV22YW7",
+              "lat": -15.6340199,
+              "lng": -56.1809085
             },
             "services": [
               {
@@ -4174,9 +4212,11 @@
           },
           {
             "name": "Comunidade São Benedito",
-            "address": "",
+            "address": "R. Jangada, 30 - Mapim, Várzea Grande - MT, 78155-150",
             "location": {
-              "link": ""
+              "link": "https://maps.app.goo.gl/cNK2uiEYeJo7kMzZ6",
+              "lat": -15.6255993,
+              "lng": -56.2306881
             },
             "services": [
               {
@@ -4204,7 +4244,7 @@
             ]
           },
           {
-            "name": "Comunidade Bom Jesus - Capão das Antas",
+            "name": "Comunidade Bom Jesus",
             "address": "",
             "location": {
               "link": ""
@@ -4220,7 +4260,7 @@
             ]
           },
           {
-            "name": "Comunidade São João Batista - Sadia III",
+            "name": "Comunidade São João Batista",
             "address": "",
             "location": {
               "link": ""

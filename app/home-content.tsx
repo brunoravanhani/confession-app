@@ -74,7 +74,7 @@ function ParishCard({ parish }: { parish: Parish }) {
   return (
     <div className="rounded-xl border border-stone-200 bg-white p-5 shadow-sm">
       <div className="mb-4 flex items-start justify-between gap-4">
-        <h2 className="text-lg font-bold text-stone-900">{parish.name}</h2>
+        <h2 className="text-lg font-bold text-stone-900">Confissão em {parish.name}</h2>
         <Link
           href={`/paroquia/${parish.slug}`}
           className="shrink-0 text-sm font-medium text-amber-800 underline decoration-amber-300 underline-offset-2 hover:text-amber-900"
